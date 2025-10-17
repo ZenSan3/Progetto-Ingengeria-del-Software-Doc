@@ -10,7 +10,7 @@
 | Doc. Nam        | D1-DescrizioneProgetto                                                                 |
 | :-------------- | :------------------------------------------------------------------------------------- |
 | **Description** | Documento di analisi dei requisiti funzionali, non funzionali, user story e front-end. |
-| **Doc. Number** | D1 V0.1                                                                                |
+| **Doc. Number** | D1 V0.2                                                                                |
 
 ## Indice
 
@@ -36,3 +36,33 @@ Vantaggi per il Comune:
 Vantaggi per il Cittadino:
 * Meno disagi: Gestendo i veicoli in modo più controllato è più difficile subire ritardi e disagi nel non riuscire ad usufruire del servizio di mobilità per affollamento.  
 * Puntualità: Diminuendo le automobili si crea sempre meno traffico e quindi è più facile arrivare da punto A a punto B senza rimanere fermi nel traffico
+
+## 2. Requisiti Funzionali
+
+### Requisiti funzionali Comuni ad Admin e Utente Base
+- [ ] Registrazione: Il sistema deve permettere agli utenti di registrarsi così da tenere traccia di: 
+	- Tratte preferite
+	- Veicolo preferito
+	- Impossibilità ad usare un veicolo
+- [ ] Login: Il sistema deve permettere agli utenti di poter fare login così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
+- [ ] Ricerca: Gli utenti devono poter ricercare le fermate oppure le stazioni dell'erogazione dei veicoli
+- [ ] Visualizzazione mappa: Il sistema deve consentire a qualsiasi utente di visualizzare la mappa
+
+### Requisiti funzionali Admin
+- [ ] Accesso alle richieste
+- [ ] Accesso alle statistiche
+
+### Requisiti funzionali Utente
+- [ ] Richiedere la Tratta
+- [ ] Ricevere la conferma o l'alternativa
+- [ ] Inserire le proprie preferenze o Impossibilità
+
+## 3. Requisiti Non Funzionali
+- [ ] Compatibilità: Chrome e Firefox
+- [ ] Performance: risposta entro 3 sec
+- [ ] Scalabilità
+- [ ] Affidabilità
+- [ ] Sicurezza
+- [ ] Accessibilità
+- [ ] Lingua
+- [ ] Facilità d'uso
