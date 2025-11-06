@@ -53,6 +53,7 @@ Per il cittadino:
 ### Limiti dell'applicazione:
 - Dipendenza da una connessione internet
 - Accessibilità limitata per utenti non digitali
+- Poche possibilità per gli utenti con disabilità
 - Manutenzione e aggiornamenti
 - Sicurezza e Privacy
 - Integrazione con sistemi esistenti
