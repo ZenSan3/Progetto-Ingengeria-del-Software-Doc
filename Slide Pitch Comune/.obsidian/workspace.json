@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "cfad737391fa6ae7",
+    "type": "split",
+    "children": [
+      {
+        "id": "eff79d0051a63eae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87a1ef277ca075a0",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "4_FuturoScalabilita.jpg"
+              },
+              "icon": "lucide-image",
+              "title": "4_FuturoScalabilita"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2a390d99d7c6cfae",
+    "type": "split",
+    "children": [
+      {
+        "id": "c23209ee18800c4c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f888da2b0f2c7adb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "195cb7f457c02104",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "722782afeb7f300b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b7a79c0c3abb5245",
+    "type": "split",
+    "children": [
+      {
+        "id": "0e4ba021d0f25475",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "785e2fb5ce8b6493",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "4_FuturoScalabilita.jpg",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 4_FuturoScalabilita"
+            }
+          },
+          {
+            "id": "17fc16edfda3c075",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "4_FuturoScalabilita.jpg",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 4_FuturoScalabilita"
+            }
+          },
+          {
+            "id": "ccb26284074b75e8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e0645fca7e9412f3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "4_FuturoScalabilita.jpg",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 4_FuturoScalabilita"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "87a1ef277ca075a0",
+  "lastOpenFiles": [
+    "3_Vantaggi.jpg",
+    "2_Soluzione.jpg",
+    "1_Problematiche.jpg"
+  ]
+}
