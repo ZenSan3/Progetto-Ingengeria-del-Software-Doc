@@ -30,7 +30,7 @@ Abbiamo inoltre osservato che, per quanto riguarda la questione degli autobus, l
 ![[2_Soluzione.jpg]]
 Il progetto ha come obiettivo la realizzazione di un’applicazione web per aiutare i cittadini a spostarsi nel comune di Trento. Make Your Move consiste infatti nella creazione di tratte per gli autobus a livello dinamico. La tratta verrà decisa la sera prima in base alle segnalazioni raccolte dagli utenti, ovvero Il punto di partenza, quello di arrivo e i relativi orari. Arriverà poi una notifica all'utente su quale sarà il suo bus, dove e quando giungerà
 
-Q&A:
+### Q&A:
 - *Non è confusionario il fatto che delle linee verranno modificate ogni giorno?*
 - Make your Move non andrà a modificare tratte già preesistenti, ma verrà creata una linea apposita (nome in codice, "linea D") in modo da generare meno confusione possibile, specialmente tra i nostri utenti più abitudinari :)
 - *Se mi dimentico di inserire la tratta per il giorno successivo come faccio ad arrivare a destinazione? Mi tocca per forza usare il mezzo personale?*
@@ -39,6 +39,7 @@ Q&A:
 - Certamente! Make Your Move al momento della registrazione chiederà le preferenze dei veicoli che l'applicazione offre, in modo che sia utenti con bisogni speciali che persone che semplicemente provano un odio profondo verso alcune opzioni, possano personalizzare i loro percorsi con serenità
 
 ![[3_Vantaggi.jpg]]
+### Pro e Contro
 I vantaggi che si otterranno con l'utilizzo della webapp sono molteplici.
 Per il comune:
 - Miglioramento della viabilità: le zone più soggette a traffico saranno meno congestionate a causa della minor presenza di mezzi personali e di percorsi alternativi suggeriti
@@ -48,6 +49,16 @@ Per il comune:
 Per il cittadino:
 - Meno disagi: gestendo i veicoli in modo più controllato, è più difficile che i cittadini subiscano disagi per ritardi, affollamenti e congestionamenti
 - Ritardi più contenuti: sempre per la minor presenza di veicoli su strada, è più probabile che gli autobus arrivino in orario alle fermate previste (o che comunque, il ritardo difficilmente sia associato al traffico)
+
+### Limiti dell'applicazione:
+- Dipendenza da una connessione internet
+- Accessibilità limitata per utenti non digitali
+- Manutenzione e aggiornamenti
+- Sicurezza e Privacy
+- Integrazione con sistemi esistenti
+- Dipendenza dall'infrastruttura tecnica
+- Possibili costi iniziali per il comune
+
 ## 2. Requisiti Funzionali
 ### Requisiti funzionali comuni ad Admin e Utente Base
 - [ ] RF1: Registrazione: Il sistema deve permettere agli utenti di registrarsi utilizzando mail e un nickname, garantendo così lo pseudo-anonimato (RNF5) e far in modo di tenere traccia di tratte e veicoli preferiti (RF7 e RF10)
