@@ -55,7 +55,7 @@ Per il cittadino:
 
 ### Limiti dell'applicazione:
 - Dipendenza da una connessione internet: La nostra webapp necessita di una connessione internet per poter usufruire delle funzionalità
-- Accessibilità limitata per utenti non digitali: Make your Move, nonostante sia fornito di tutorial introduttivo, potrebbe non essere utilizzabile a pieno per utenti non avvezzi al digitale
+- Accessibilità limitata per utenti non digitali: Make your Move, nonostante sia fornito di tutorial introduttivo, potrebbe non essere utilizzabile a pieno per utenti non avvezzi al digitale sia perchè risulta troppo complesso, sia perchè non possiedono strumenti compatibili con l'applicazione
 - Poche possibilità per gli utenti con disabilità: L'app non è usufruibile a pieno da utenti affetti da determinate disabilità, rendendo quindi alcune possibilità/alternative non fattibili 
 - Manutenzione e aggiornamenti: La webapp non sarà usufruibile sempre a causa di manutenzioni programmate, che comunque non supereranno il quantitativo di tempo prestabilito (RNF4)
 - Sicurezza e Privacy: sebbene l'applicazione sia stata progettata rispettando norme di sicurezza e privacy nei confronti dell'utente, non è comunque esente dal rischio di potenziali attacchi e violazioni informatiche, compromettendo di conseguenza i dati sensibili inseriti
@@ -65,8 +65,8 @@ Per il cittadino:
 
 ## 2. Requisiti Funzionali
 ### Requisiti funzionali comuni ad Admin e Utente Base
-- [ ] RF1: Registrazione: Il sistema deve permettere agli utenti di registrarsi utilizzando mail e un nickname, garantendo così lo pseudo-anonimato (RNF5) e far in modo di tenere traccia di tratte e veicoli preferiti (RF7 e RF10)
-- [ ] RF2: Login: Il sistema deve permettere agli utenti di poter accedere col proprio account creato precedentemente (RF1) così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
+- [x] RF1: Registrazione: Il sistema deve permettere agli utenti di registrarsi utilizzando mail e un nickname, garantendo così lo pseudo-anonimato (RNF5) e far in modo di tenere traccia di tratte e veicoli preferiti (RF7 e RF10)
+- [x] RF2: Login: Il sistema deve permettere agli utenti di poter accedere col proprio account creato precedentemente (RF1) così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
 - [ ] RF3: Ricerca: L'utente deve poter effettuare ricerche dei luoghi per indicare il punto di partenza e arrivo
 - [ ] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
 
@@ -117,3 +117,11 @@ Questo use case descrive come l’utente anonimo effettua il login nella webapp
 3. Se l'utente (in alternativa a descrizione 2) preme sul pulsante "Login with Google", dovrà inserire le proprie credenziali di Google in apposite schermate per poi arrivare alla pagina principale dell'app \[eccezione 1]
 ##### Eccezioni:
 1. Se l'utente inserisce credenziali errate, si ripresenta nuovamente sulla schermata di login per reinserire quelle corrette
+
+### Utente Base:
+RF10: Inserimento preferenze
+RF3: Ricerca
+RF4: Visualizzazione mappa
+RF7: Richiesta tratta
+RF8: Ricevuta di consegna
+RF9: Proposta di alternativa
