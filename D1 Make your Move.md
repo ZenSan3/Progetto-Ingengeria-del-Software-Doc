@@ -89,3 +89,18 @@ Per il cittadino:
 - [ ] RNF6: Accessibilità: Il sistema deve essere usufruibile da utenti affetti da disabilità
 - [ ] RNF7: Lingua: Il sistema sarà in Italiano e in Inglese
 - [ ] RNF8: Facilità d'uso: Il sistema, grazie ad un tutorial introduttivo, deve essere facilmente fruibile anche per utenti poco avvezzi all'uso di internet e dello smartphone
+
+## 4. Use Case
+### Use Case RF1: Registrazione
+#### Riassunto:
+Questo Use case descrive come l'utente anonimo può registrare un nuovo account a cui poi potrà fare login.
+#### Descrizione
+1. L'utente parte come anonimo e per registrarsi deve cliccare sull'apposito bottone.
+2. Nella schermata di registrazione c'è un form i cui campi obbligatori sono: Username, Mail, Password. Mentre i campi opzionali sono: Check disabilità e tipo utente
+3. Viene mandata una mail con un link per la conferma della registrazione.
+4. Cliccando sul link la registrazione viene finalizzata e salvata.
+#### Eccezioni
+1. Se l'utente non inserisce i campi obbligatori la mail non verrà inviata e la registrazione non potrà proseguire.
+2. Se l'utente non usa il link l'utente non viene finalizzato e aggiunto al database.
+#### Estensioni
+Se il tipo dell'utente è operatore o admin prima che la mail di conferma venga inviata chiede l'autorizzazione a un admin per controllare che sia legittimo.

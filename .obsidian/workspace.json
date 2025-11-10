@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UserCase scritti.md",
+                "file": "D1 Make your Move.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UserCase scritti"
+              "title": "D1 Make your Move"
+            }
+          },
+          {
+            "id": "38f0200e26306ada",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "D1 Make your Move.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "D1 Make your Move"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,10 +184,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "73a6728c59f36208",
+  "active": "38f0200e26306ada",
   "lastOpenFiles": [
-    "D1 Make your Move.md",
     "UserCase scritti.md",
+    "D1 Make your Move.md",
     "Slide Pitch Comune/1_Problematiche.jpg",
     "image4.md",
     "image1.md",
