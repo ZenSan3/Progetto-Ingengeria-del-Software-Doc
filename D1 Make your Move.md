@@ -100,17 +100,20 @@ RF2: Login
 Questo Use case descrive come l'utente anonimo può registrare un nuovo account a cui poi potrà fare login.
 ##### Descrizione
 1. L'utente parte come anonimo e per registrarsi deve cliccare sull'apposito bottone.
-2. Nella schermata di registrazione c'è un form i cui campi obbligatori sono: Username, Mail, Password. Mentre i campi opzionali sono: Check disabilità e tipo utente
+2. Nella schermata di registrazione c'è un form i cui campi obbligatori sono: Username, Mail, Password. Mentre i campi opzionali sono: Check disabilità e tipo utente \[eccezione 1] \[estensione 1]
 3. Viene mandata una mail con un link per la conferma della registrazione.
-4. Cliccando sul link la registrazione viene finalizzata e salvata.
+4. Cliccando sul link la registrazione viene finalizzata e salvata. \[eccezione 2]
 ##### Eccezioni
 1. Se l'utente non inserisce i campi obbligatori la mail non verrà inviata e la registrazione non potrà proseguire.
 2. Se l'utente non usa il link l'utente non viene finalizzato e aggiunto al database.
 ##### Estensioni
-Se il tipo dell'utente è operatore o admin prima che la mail di conferma venga inviata chiede l'autorizzazione a un admin per controllare che sia legittimo.
+1. Se il tipo dell'utente è operatore o admin prima che la mail di conferma venga inviata chiede l'autorizzazione a un admin per controllare che sia legittimo.
 #### Use Case RF2: Login
 ##### Riassunto:
-
+Questo use case descrive come l’utente anonimo effettua il login nella webapp
 ##### Descrizione:
+1. L'utente visualizza una schermata con un form
+2. Se l'utente inserisce all'interno degli appositi campi username e password e preme il pulsante "Login", si apre la schermata principale dell'applicazione \[eccezione 1]
+3. Se l'utente (in alternativa a descrizione 2) preme sul pulsante "Login with Google", dovrà inserire le proprie credenziali di Google in apposite schermate per poi arrivare alla pagina principale dell'app \[eccezione 1]
 ##### Eccezioni:
-##### Estensioni:
+1. Se l'utente inserisce credenziali errate, si ripresenta nuovamente sulla schermata di login per reinserire quelle corrette
