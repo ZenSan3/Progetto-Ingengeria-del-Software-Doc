@@ -10,13 +10,14 @@
 | Doc. Nam        | D1-DescrizioneProgetto                                                                 |
 | :-------------- | :------------------------------------------------------------------------------------- |
 | **Description** | Documento di analisi dei requisiti funzionali, non funzionali, user story e front-end. |
-| **Doc. Number** | D1 V0.3                                                                                |
+| **Doc. Number** | D1 V0.4                                                                                |
 
 ## Indice
 
 1. Il progetto Make your Move
 2. Requisiti Funzionali
 3. Requisiti Non Funzionali
+4. Use case Diagram
 
 ## 1\. Il progetto Make your Move
 
@@ -48,24 +49,26 @@ Per il comune:
 
 Per il cittadino:
 - Meno disagi: gestendo i veicoli in modo più controllato, è più difficile che i cittadini subiscano disagi per ritardi, affollamenti e congestionamenti
-- Ritardi più contenuti: sempre per la minor presenza di veicoli su strada, è più probabile che gli autobus arrivino in orario alle fermate previste (o che comunque, il ritardo difficilmente sia associato al traffico)
+- Ritardi più contenuti: sempre per la minor presenza di veicoli su strada, è più probabile che gli autobus arrivino in orario alle fermate previste (o che comunque, il ritardo difficilmente sia attribuibile al traffico)
+- Accesso remoto: grazie all'interfaccia web accessibile da tutti i dispositivi, Make your Move è accessibile dove e quando si vuole
+- Notifiche/promemoria: l'applicazione manda notifiche all'utente dell'itinerario creato per il giorno successivo, in modo che non si debba necessariamente entrare nell'app solo per questo motivo
 
 ### Limiti dell'applicazione:
-- Dipendenza da una connessione internet
-- Accessibilità limitata per utenti non digitali
-- Poche possibilità per gli utenti con disabilità
-- Manutenzione e aggiornamenti
-- Sicurezza e Privacy
-- Integrazione con sistemi esistenti
-- Dipendenza dall'infrastruttura tecnica
-- Possibili costi iniziali per il comune
+- Dipendenza da una connessione internet: La nostra webapp necessita di una connessione internet per poter usufruire delle funzionalità
+- Accessibilità limitata per utenti non digitali: Make your Move, nonostante sia fornito di tutorial introduttivo, potrebbe non essere utilizzabile a pieno per utenti non avvezzi al digitale
+- Poche possibilità per gli utenti con disabilità: L'app non è usufruibile a pieno da utenti affetti da determinate disabilità, rendendo quindi alcune possibilità/alternative non fattibili 
+- Manutenzione e aggiornamenti: La webapp non sarà usufruibile sempre a causa di manutenzioni programmate, che comunque non supereranno il quantitativo di tempo prestabilito (RNF4)
+- Sicurezza e Privacy: sebbene l'applicazione sia stata progettata rispettando norme di sicurezza e privacy nei confronti dell'utente, non è comunque esente dal rischio di potenziali attacchi e violazioni informatiche, compromettendo di conseguenza i dati sensibili inseriti
+- Integrazione con sistemi esistenti: la compatibilità e l'integrazione futura con sistemi esistenti potrebbe risultare difficoltosa con sistemi attualmente in uso 
+- Dipendenza dall'infrastruttura tecnica: Le prestazioni dell'applicazioni dipendono dalla qualità e dalla capacità dei server. Di conseguenza, se l'hardware non soddisfa queste due proprietà, potrebbero presentarsi problemi sul servizio (N.B: RNF2 è stato scritto presupponendo che l'hardware sia adeguato per le richieste)
+- Possibili costi iniziali per il comune e per Trentino Trasporti: l'implementazione del servizio può comportare un piccolo investimento iniziale riguardo la formazione del personale, l'investimento di nuove risorse e la possibile integrazione con sistemi già esistenti
 
 ## 2. Requisiti Funzionali
 ### Requisiti funzionali comuni ad Admin e Utente Base
 - [ ] RF1: Registrazione: Il sistema deve permettere agli utenti di registrarsi utilizzando mail e un nickname, garantendo così lo pseudo-anonimato (RNF5) e far in modo di tenere traccia di tratte e veicoli preferiti (RF7 e RF10)
 - [ ] RF2: Login: Il sistema deve permettere agli utenti di poter accedere col proprio account creato precedentemente (RF1) così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
 - [ ] RF3: Ricerca: L'utente deve poter effettuare ricerche dei luoghi per indicare il punto di partenza e arrivo
-- [ ] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare la mappa interattiva
+- [ ] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
 
 ### Requisiti funzionali Admin
 - [ ] RF5: Richieste utenti: Il sistema deve garantire agli admin di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7)
@@ -80,7 +83,7 @@ Per il cittadino:
 ## 3. Requisiti Non Funzionali
 - [ ] RNF1: Compatibilità: Il sistema deve essere compatibile con i seguenti browser: Chrome (inserisci versione) e Firefox (inserisci versione)
 - [ ] RNF2: Performance: Il sistema deve garantire tempi di risposta entro 5 secondi
-- [ ] RNF3: Scalabilità: Il sistema deve essere in grado di integrare future espansioni senza difficoltà
+- [ ] RNF3: Scalabilità: Il sistema deve essere in grado di integrare future espansioni senza troppe difficoltà
 - [ ] RNF4: Affidabilità: Il sistema dovrà garantire dei tempi di esecuzione di almeno 15h filate, con un massimo di 2h di "down-time" per manutenzione programmata
 - [ ] RNF5: Sicurezza e privacy: Il sistema dovrà garantire uno pseudo-anonimato nella raccolta delle informazioni necessarie (Nickname e mail) 
 - [ ] RNF6: Accessibilità: Il sistema deve essere usufruibile da utenti affetti da disabilità
