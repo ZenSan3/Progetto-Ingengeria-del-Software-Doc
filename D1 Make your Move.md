@@ -22,46 +22,45 @@
 ## 1\. Il progetto Make your Move
 
 ![[1_Problematiche.jpg]]
-Il problema che abbiamo identificato riguarda una macro-categoria, ovvero traffico e viabilità. A Trento, per esempio, non è difficile trovare strade congestionate (specialmente in fasce orarie "di punta") a causa del traffico che talvolta diventa anche insostenibile (sia a livello di inquinamento ambientale, che a livello di disagio del cittadino).
-Effettuando interviste ad amici e parenti, abbiamo notato che, chi vorrebbe utilizzare mezzi di trasporto pubblici, non si trova in una posizione da poter essere incentivato ad usarli. Infatti, a detta loro, il traffico eccessivo comporta un rallentamento del mezzo, accumulando ritardo di conseguenza. Specialmente per chi non si può permettere di arrivare a destinazione in ritardo o per chi deve effettuare troppi cambi, si andrà a preferire il mezzo personale, causando così un "loop" che non avrà fine.
-Abbiamo inoltre osservato che, per quanto riguarda la questione degli autobus, la domanda non è sempre concerne all'offerta. Entrando più nel dettaglio si può notare come ci siano abbastanza spesso situazioni di questo tipo:
-- Pochi autobus ma molto pieni. Alcune persone devono aspettare il prossimo perchè non sono riuscite a salire a causa di ciò
-- Molti autobus quasi vuoti. Queste potrebbero essere risorse ricollocabili altrove, dove c'è un reale bisogno
+Il problema che abbiamo identificato riguarda una macro-categoria, ovvero traffico e viabilità. A Trento, per esempio, non è difficile trovare strade congestionate (specialmente in fasce orarie "di punta") a causa del traffico che talvolta diventa anche insostenibile, con pesanti ripercussioni sull'ambiente, e sui cittadini.
+Effettuando interviste ad amici e parenti, abbiamo notato che, chi vorrebbe utilizzare mezzi di trasporto pubblici, spesso non si trova in una posizione da poter essere incentivato ad usarli. Infatti, il traffico eccessivo comporta un rallentamento del mezzo, accumulando ritardo di conseguenza. Specialmente per chi non si può permettere di arrivare a destinazione in ritardo o per chi deve effettuare dei cambi, si andrà a preferire il mezzo personale, causando così un circolo vizioso interminabile.
+Abbiamo inoltre osservato che, per quanto riguarda gli autobus, la domanda non è sempre seguita dall'offerta. Il cittadino si trova di fronte a due problemi principali:
+- Pochi autobus ma molto pieni. Questo non solo causa problemi di sicurezza a bordo del veicolo, ma suggerisce un problema organizzativo e porta i cittadini a scegliere soluzioni alternative, spesso più inquinanti.
+- Molti autobus quasi vuoti. Queste risorse potrebbero essere ricollocate altrove, dove c'è un reale bisogno.
 
 ![[2_Soluzione.jpg]]
-Il progetto ha come obiettivo la realizzazione di un’applicazione web per aiutare i cittadini a spostarsi nel comune di Trento. Make Your Move consiste infatti nella creazione di tratte per gli autobus a livello dinamico. La tratta verrà decisa la sera prima in base alle segnalazioni raccolte dagli utenti, ovvero Il punto di partenza, quello di arrivo e i relativi orari. Arriverà poi una notifica all'utente su quale sarà il suo bus, dove e quando giungerà
+Il progetto ha come obiettivo la realizzazione di un’applicazione web per aiutare i cittadini a spostarsi nel comune di Trento. Il core di Make Your Move consiste infatti nella creazione di tratte dinamiche per le linee autobus. La tratta viene calcolata subito prima dell'inizio del turno, in base alle segnalazioni raccolte dagli utenti, ovvero Il punto di partenza, quello di arrivo e i relativi orari. Arriverà poi una notifica all'utente su quale sarà il suo bus, dove e quando giungerà.
 
 ### Q&A:
 - *Non è confusionario il fatto che delle linee verranno modificate ogni giorno?*
 - Make your Move non andrà a modificare tratte già preesistenti, ma verrà creata una linea apposita (nome in codice, "linea D") in modo da generare meno confusione possibile, specialmente tra i nostri utenti più abitudinari :)
 - *Se mi dimentico di inserire la tratta per il giorno successivo come faccio ad arrivare a destinazione? Mi tocca per forza usare il mezzo personale?*
-- Non necessariamente. Make your Move salva le tratte che l'utente ha considerato come "abitudinarie". In caso il percorso desiderato sia "straordinario" e/o l'utente si è dimenticato di inserirlo, l'applicazione propone (in base a disponibilità e preferenze) mezzi pubblici alternativi come linee autobus tradizionali, monopattini elettrici, biciclette,... Il veicolo personale (inteso come auto o moto) resterà disponibile come ultima spiaggia. In tal caso Make Your Move fornirà un percorso, dove possibile, in zone meno trafficate con simile tempo di arrivo (Eta. max 5 min in più considerando le condizioni di traffico attuali sul tragitto più breve)
+- Non necessariamente. Make your Move salva le tratte che l'utente ha considerato come "abitudinarie". In caso il percorso desiderato sia "straordinario" e/o l'utente si è dimenticato di inserirlo, l'applicazione propone (in base a disponibilità e preferenze) mezzi pubblici alternativi come linee autobus tradizionali, monopattini elettrici o biciclette. Il veicolo personale (inteso come auto o moto) resterà disponibile in extremis. ~~In tal caso Make Your Move fornirà un percorso, dove possibile, in zone meno trafficate con simile tempo di arrivo (Eta. max 5 min in più considerando le condizioni di traffico attuali sul tragitto più breve)~~ (propongo di rimuovere questa parte, per ridondanza con google maps e difficoltà di implementazione)
 - *Sono un utente con disabilità fisiche. L'applicazione può adattarsi alle mie esigenze?*
-- Certamente! Make Your Move al momento della registrazione chiederà le preferenze dei veicoli che l'applicazione offre, in modo che sia utenti con bisogni speciali che persone che semplicemente provano un odio profondo verso alcune opzioni, possano personalizzare i loro percorsi con serenità
+- Certamente! Make Your Move al momento della registrazione chiederà le preferenze dei veicoli che l'applicazione offre, in modo che sia utenti con bisogni speciali che persone che preferiscono evitare alcune opzioni, possano personalizzare i loro percorsi con serenità.
 
 ![[3_Vantaggi.jpg]]
 ### Pro e Contro
 I vantaggi che si otterranno con l'utilizzo della webapp sono molteplici.
 Per il comune:
-- Miglioramento della viabilità: le zone più soggette a traffico saranno meno congestionate a causa della minor presenza di mezzi personali e di percorsi alternativi suggeriti
-- Minor impatto ambientale: sempre a causa di meno auto e moto presenti su strada, l'inquinamento dell'aria sarà in diminuzione
-- Costi minori: ottimizzando l'uso dei veicoli pubblici in base alle richieste degli utenti, i costi di mantenimento saranno più contenuti
+- Miglioramento della viabilità: la maggiore pianificazione degli itinerari dei cittadini consente un flusso del traffico sensibilmente più efficiente.
+- Minor impatto ambientale: autobus e altre soluzioni di mobilità sostenibile, hanno un impatto significativamente minore sulle emissioni di co2.
+- Costi minori: ottimizzando l'uso dei veicoli pubblici in base alle richieste degli utenti, i costi di mantenimento saranno più contenuti.
 
 Per il cittadino:
-- Meno disagi: gestendo i veicoli in modo più controllato, è più difficile che i cittadini subiscano disagi per ritardi, affollamenti e congestionamenti
-- Ritardi più contenuti: sempre per la minor presenza di veicoli su strada, è più probabile che gli autobus arrivino in orario alle fermate previste (o che comunque, il ritardo difficilmente sia attribuibile al traffico)
-- Accesso remoto: grazie all'interfaccia web accessibile da tutti i dispositivi, Make your Move è accessibile dove e quando si vuole
-- Notifiche/promemoria: l'applicazione manda notifiche all'utente dell'itinerario creato per il giorno successivo, in modo che non si debba necessariamente entrare nell'app solo per questo motivo
+- Meno disagi: con una gestione del traffico più controllata, la viabilità cittadina ottiene maggior resilienza, riducendo ritardi e congestioni dei viadotti.
+- Accesso remoto: grazie all'interfaccia web accessibile da tutti i dispositivi, Make your Move è facilmente accessibile sempre e ovunque.
+- Notifiche/promemoria: MakeYourMove manda notifiche all'utente dell'itinerario creato per il giorno successivo, al fine di agevolare l'uso dell'app e garantire la più alta adesione possibile agli itinerari.
 
 ### Limiti dell'applicazione:
 - Dipendenza da una connessione internet: La nostra webapp necessita di una connessione internet per poter usufruire delle funzionalità
-- Accessibilità limitata per utenti non digitali: Make your Move, nonostante sia fornito di tutorial introduttivo, potrebbe non essere utilizzabile a pieno per utenti non avvezzi al digitale sia perchè risulta troppo complesso, sia perchè non possiedono strumenti compatibili con l'applicazione
-- Poche possibilità per gli utenti con disabilità: L'app non è usufruibile a pieno da utenti affetti da determinate disabilità, rendendo quindi alcune possibilità/alternative non fattibili 
-- Manutenzione e aggiornamenti: La webapp non sarà usufruibile sempre a causa di manutenzioni programmate, che comunque non supereranno il quantitativo di tempo prestabilito (RNF4)
-- Sicurezza e Privacy: sebbene l'applicazione sia stata progettata rispettando norme di sicurezza e privacy nei confronti dell'utente, non è comunque esente dal rischio di potenziali attacchi e violazioni informatiche, compromettendo di conseguenza i dati sensibili inseriti
+- Accessibilità limitata per utenti non digitali: sebbene MakeYourMove sia pensata per essere facile e veloce da usare, gli utenti con poca familiarità con gli smartphone potrebbero fare fatica ad utilizzare l'app al pieno delle potenzialità.
+- Poche possibilità per gli utenti con disabilità: L'app non è usufruibile a pieno da utenti affetti da disabilità visive, rendendo quindi alcune possibilità/alternative non fattibili.
+- Manutenzione e aggiornamenti: La webapp potrebbe non essere usufruibile per brevi periodi di tempo, in orari non di punta, per manutenzioni programmate o malfunzionamenti, che comunque non supereranno il quantitativo di tempo prestabilito (RNF4).
+- Sicurezza e Privacy: sebbene l'applicazione sia pensata per rispettare norme di sicurezza e privacy nei confronti dell'utente, potrebbe non essere del tutto esente dal rischio di potenziali attacchi e violazioni informatiche, compromettendo di conseguenza i dati sensibili inseriti
 - Integrazione con sistemi esistenti: la compatibilità e l'integrazione futura con sistemi esistenti potrebbe risultare difficoltosa con sistemi attualmente in uso 
 - Dipendenza dall'infrastruttura tecnica: Le prestazioni dell'applicazioni dipendono dalla qualità e dalla capacità dei server. Di conseguenza, se l'hardware non soddisfa queste due proprietà, potrebbero presentarsi problemi sul servizio (N.B: RNF2 è stato scritto presupponendo che l'hardware sia adeguato per le richieste)
-- Possibili costi iniziali per il comune e per Trentino Trasporti: l'implementazione del servizio può comportare un piccolo investimento iniziale riguardo la formazione del personale, l'investimento di nuove risorse e la possibile integrazione con sistemi già esistenti
+- Possibili costi iniziali per il comune e per Trentino Trasporti: l'implementazione del servizio può comportare un piccolo investimento iniziale riguardo la formazione del personale, l'investimento di nuove risorse e la possibile integrazione con sistemi già esistenti.
 
 ## 2. Requisiti Funzionali
 ### Requisiti funzionali comuni ad Admin e Utente Base
