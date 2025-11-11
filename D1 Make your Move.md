@@ -67,15 +67,15 @@ Per il cittadino:
 ### Requisiti funzionali comuni ad Admin e Utente Base
 - [x] RF1: Registrazione: Il sistema deve permettere agli utenti di registrarsi utilizzando mail e un nickname, garantendo così lo pseudo-anonimato (RNF5) e far in modo di tenere traccia di tratte e veicoli preferiti (RF7 e RF10)
 - [x] RF2: Login: Il sistema deve permettere agli utenti di poter accedere col proprio account creato precedentemente (RF1) così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
-- [ ] RF3: Ricerca: L'utente deve poter effettuare ricerche dei luoghi per indicare il punto di partenza e arrivo
-- [ ] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
+- [x] RF3: Ricerca: L'utente deve poter effettuare ricerche dei luoghi per indicare il punto di partenza e arrivo
+- [x] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
 
 ### Requisiti funzionali Admin
 - [ ] RF5: Richieste utenti: Il sistema deve garantire agli admin di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7)
 - [ ] RF6: Statistiche: Il sistema deve poter permettere agli admin di visualizzare le statistiche riguardanti le richieste e le persone effettivamente salite
 
 ### Requisiti funzionali Utente
-- [ ] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
+- [x] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
 - [ ] RF8: Ricevuta di consegna: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
 - [ ] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
 - [ ] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
@@ -119,9 +119,61 @@ Questo use case descrive come l’utente anonimo effettua il login nella webapp
 1. Se l'utente inserisce credenziali errate, si ripresenta nuovamente sulla schermata di login per reinserire quelle corrette
 
 ### Utente Base:
-RF10: Inserimento preferenze
 RF3: Ricerca
 RF4: Visualizzazione mappa
 RF7: Richiesta tratta
 RF8: Ricevuta di consegna
 RF9: Proposta di alternativa
+RF10: Inserimento preferenze
+![[UCD RF10, RF3, RF4, RF7, RF8, RF9.drawio.svg]]
+#### Use case RF3: Ricerca
+##### Riassunto:
+Questo use case descrive come l'utente effettua una ricerca sulla webapp
+##### Descrizione:
+1. L'utente visualizza un'icona con lente d'ingrandimento e una casella in cui può inserire il testo
+2. Una volta inserito tutto, l'utente preme il tasto "INVIO" oppure le opzioni sottostanti che coincidono a ciò che soddisfa il parametro di ricerca \[eccezione 1]
+##### Eccezioni:
+1. Se l'utente inserisce nei parametri di ricerca un luogo che non è stato inserito oppure non esiste, l'app restituisce un errore di "nessun luogo corrispondente alla ricerca"
+#### Use case RF4: Visualizzazione mappa
+##### Riassunto:
+Questo use case descrive come l'utente può interagire con la mappa
+##### Descrizione:
+1. L'utente visualizzerà la mappa appena aprirà l'applicazione
+2. L'utente, per interagire con la mappa dovrà usare il cursore per spostarsi \[estensione 1]
+##### Estensioni:
+1. Se l'utente vuole avere dei dettagli sul luogo visualizzato sulla mappa, può cliccare su di esso per rivelare informazioni come nome, tipologia (ristorante, parco, università,...) e zona in cui è situato
+#### Use case RF7: Richiesta tratta
+##### Riassunto:
+Questo use case descrive come l'utente può richiedere la tratta per il bus dinamico
+##### Descrizione:
+1. L'utente preme sul pulsante "RICHIEDI TRATTA" per poter inserire la richiesta del proprio spostamento
+2. L'utente dovrà compilare un form inserendo il luogo e l'ora sia del punto di partenza, che quello di arrivo \[eccezione 1] \[estensione 1] 
+3. L'utente, una volta inserito tutto il necessario, clicca il pulsante "CONFERMA E INVIA" \[estensione 2]
+##### Eccezioni:
+1. Se l'utente inserisce un luogo o un orario non valido (es: partenza da Piazza Venezia alle 10:00 e arrivo al Polo Ferrari Povo 1 alle 10:01), il sistema darà errore e non permetterà l'invio del form fino a quando gli errori non sono stati corretti
+##### Estensioni:
+1. Nel form ci sarà la possibilità di impostare quella tratta come "TRATTA FREQUENTE" e per quali periodi di tempo (esempio: ogni settimana, dal lunedì al venerdì), in modo da dover evitare l'inserimento manuale dello stesso percorso ogni volta
+2. Se l'utente desidera cancellare la tratta, può selezionare la richiesta fatta e cliccare sul pulsante "CANCELLA TRATTA"
+#### Use case RF8: Ricevuta di consegna
+##### Riassunto:
+Questo use case descrive come l'utente capisce che la sua richiesta ha effettivamente "attivato" la linea dinamica
+##### Descrizione:
+1. L'utente riceve una notifica e/o una mail contenente l'esito della richiesta \[eccezione 1] \[estensione 1] \[estensione 2]
+##### Eccezioni:
+1. Se l'utente non ha effettuato richieste di viaggi e tratte, allora non riceverà alcun tipo di notifica
+##### Estensioni:
+1. Se la tratta passa nella zona dell'utente, allora riceverà l'esito con la fermata più vicina e l'orario a cui passa
+2. Se la tratta non passa nella zona dell'utente, allora riceverà una notifica che propone di visualizzare la linea, ma che sono disponibili alternative migliori
+#### Use case RF9: Proposta di alternativa
+##### Riassunto:
+Questo use case descrive come l'utente può visualizzare le alternative proposte dall'app
+##### Descrizione:
+1. L'utente, dopo aver inserito una richiesta di tratta
+##### Eccezioni:
+##### Estensioni:
+#### Use case RF10: Inserimento preferenze
+##### Riassunto:
+Questo use case descrive
+##### Descrizione:
+##### Eccezioni:
+##### Estensioni:
