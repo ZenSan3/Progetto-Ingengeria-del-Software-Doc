@@ -148,9 +148,10 @@ Questo use case descrive come l'utente può richiedere la tratta per il bus dina
 ##### Descrizione:
 1. L'utente preme sul pulsante "RICHIEDI TRATTA" per poter inserire la richiesta del proprio spostamento
 2. L'utente dovrà compilare un form inserendo il luogo e l'ora sia del punto di partenza, che quello di arrivo \[eccezione 1] \[estensione 1] 
-3. L'utente, una volta inserito tutto il necessario, clicca il pulsante "CONFERMA E INVIA" \[estensione 2]
+3. L'utente, una volta inserito tutto il necessario, clicca il pulsante "CONFERMA E INVIA" \[eccezione 2]  \[estensione 2]
 ##### Eccezioni:
 1. Se l'utente inserisce un luogo o un orario non valido (es: partenza da Piazza Venezia alle 10:00 e arrivo al Polo Ferrari Povo 1 alle 10:01), il sistema darà errore e non permetterà l'invio del form fino a quando gli errori non sono stati corretti
+2. Se l'utente non cliccherà il pulsante "CONFERMA E INVIA" la richiesta non arriverà agli operatori, di conseguenza non potranno valutare la fattibilità della richiesta.
 ##### Estensioni:
 1. Nel form ci sarà la possibilità di impostare quella tratta come "TRATTA FREQUENTE" e per quali periodi di tempo (esempio: ogni settimana, dal lunedì al venerdì), in modo da dover evitare l'inserimento manuale dello stesso percorso ogni volta
 2. Se l'utente desidera cancellare la tratta, può selezionare la richiesta fatta e cliccare sul pulsante "CANCELLA TRATTA"
@@ -163,7 +164,7 @@ Questo use case descrive come l'utente capisce che la sua richiesta ha effettiva
 1. Se l'utente non ha effettuato richieste di viaggi e tratte, allora non riceverà alcun tipo di notifica
 ##### Estensioni:
 1. Se la tratta passa nella zona dell'utente, allora riceverà l'esito con la fermata più vicina e l'orario a cui passa
-2. Se la tratta non passa nella zona dell'utente, allora riceverà una notifica che propone di visualizzare la linea, ma che sono disponibili alternative migliori
+2. Se la tratta non passa nella zona dell'utente, allora riceverà una notifica che propone di visualizzare la linea che è stata approvata e mostrerà anche le alternative disponibili tra le preferenze dell'utente
 #### Use case RF9: Proposta di alternativa
 ##### Riassunto:
 Questo use case descrive come l'utente può visualizzare le alternative proposte dall'app
