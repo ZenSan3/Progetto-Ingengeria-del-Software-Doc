@@ -35,7 +35,7 @@ Il progetto ha come obiettivo la realizzazione di un’applicazione web per aiut
 - *Non è confusionario il fatto che delle linee verranno modificate ogni giorno?*
 - Make your Move non andrà a modificare tratte già preesistenti, ma verrà creata una linea apposita (nome in codice, "linea D") in modo da generare meno confusione possibile, specialmente tra i nostri utenti più abitudinari :)
 - *Se mi dimentico di inserire la tratta per il giorno successivo come faccio ad arrivare a destinazione? Mi tocca per forza usare il mezzo personale?*
-- Non necessariamente. Make your Move salva le tratte che l'utente ha considerato come "abitudinarie". In caso il percorso desiderato sia "straordinario" e/o l'utente si è dimenticato di inserirlo, l'applicazione propone (in base a disponibilità e preferenze) mezzi pubblici alternativi come linee autobus tradizionali, monopattini elettrici o biciclette. Il veicolo personale (inteso come auto o moto) resterà disponibile in extremis. ~~In tal caso Make Your Move fornirà un percorso, dove possibile, in zone meno trafficate con simile tempo di arrivo (Eta. max 5 min in più considerando le condizioni di traffico attuali sul tragitto più breve)~~ (propongo di rimuovere questa parte, per ridondanza con google maps e difficoltà di implementazione)
+- Non necessariamente. Make your Move salva le tratte che l'utente ha considerato come "abitudinarie". In caso il percorso desiderato sia "straordinario" e/o l'utente si è dimenticato di inserirlo, l'applicazione propone (in base a disponibilità e preferenze) mezzi pubblici alternativi come linee autobus tradizionali, monopattini elettrici o biciclette. Il veicolo personale (inteso come auto o moto) resterà disponibile in extremis. 
 - *Sono un utente con disabilità fisiche. L'applicazione può adattarsi alle mie esigenze?*
 - Certamente! Make Your Move al momento della registrazione chiederà le preferenze dei veicoli che l'applicazione offre, in modo che sia utenti con bisogni speciali che persone che preferiscono evitare alcune opzioni, possano personalizzare i loro percorsi con serenità.
 
@@ -50,7 +50,7 @@ Per il comune:
 Per il cittadino:
 - Meno disagi: con una gestione del traffico più controllata, la viabilità cittadina ottiene maggior resilienza, riducendo ritardi e congestioni dei viadotti.
 - Accesso remoto: grazie all'interfaccia web accessibile da tutti i dispositivi, Make your Move è facilmente accessibile sempre e ovunque.
-- Notifiche/promemoria: MakeYourMove manda notifiche all'utente dell'itinerario creato per il giorno successivo, al fine di agevolare l'uso dell'app e garantire la più alta adesione possibile agli itinerari.
+- Notifiche/promemoria: Make Your Move manda notifiche all'utente dell'itinerario creato per il giorno successivo, al fine di agevolare l'uso dell'app e garantire la più alta adesione possibile agli itinerari.
 
 ### Limiti dell'applicazione:
 - Dipendenza da una connessione internet: La nostra webapp necessita di una connessione internet per poter usufruire delle funzionalità
@@ -63,14 +63,14 @@ Per il cittadino:
 - Possibili costi iniziali per il comune e per Trentino Trasporti: l'implementazione del servizio può comportare un piccolo investimento iniziale riguardo la formazione del personale, l'investimento di nuove risorse e la possibile integrazione con sistemi già esistenti.
 
 ## 2. Requisiti Funzionali
-### Requisiti funzionali comuni ad Admin e Utente Base
+### Requisiti funzionali comuni ad Admin, Operatore e Utente Base
 - [x] RF1: Registrazione: Il sistema deve permettere agli utenti di registrarsi utilizzando mail e un nickname, garantendo così lo pseudo-anonimato (RNF5) e far in modo di tenere traccia di tratte e veicoli preferiti (RF7 e RF10)
 - [x] RF2: Login: Il sistema deve permettere agli utenti di poter accedere col proprio account creato precedentemente (RF1) così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
 - [x] RF3: Ricerca: L'utente deve poter effettuare ricerche dei luoghi per indicare il punto di partenza e arrivo
 - [x] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
 
-### Requisiti funzionali Admin
-- [ ] RF5: Richieste utenti: Il sistema deve garantire agli admin di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7)
+### Requisiti funzionali Operatore
+- [ ] RF5: Richieste utenti: Il sistema deve garantire agli admin di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7) e di poterle accettare o rifiutarle
 - [ ] RF6: Statistiche: Il sistema deve poter permettere agli admin di visualizzare le statistiche riguardanti le richieste e le persone effettivamente salite
 
 ### Requisiti funzionali Utente
@@ -78,13 +78,16 @@ Per il cittadino:
 - [x] RF8: Ricevuta di consegna: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
 - [x] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
 - [x] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
+### Requisiti funzionali Admin
+- [ ] RF11: Modifiche: Il sistema deve permettere agli admin di poter fare modifiche all'app (esempio: disabilitare una fermata)
+- [ ] RF12: Gestione utenti: Il sistema deve permettere agli admin di gestire e dare permessi agli utenti
 
 ## 3. Requisiti Non Funzionali
-- [ ] RNF1: Compatibilità: Il sistema deve essere compatibile con i seguenti browser: Chrome (inserisci versione) e Firefox (inserisci versione)
+- [ ] RNF1: Compatibilità: Il sistema deve essere compatibile con i seguenti browser: Chrome (inserisci versione) (+ browser basati su Chronium) e Safari (inserisci versione)
 - [ ] RNF2: Performance: Il sistema deve garantire tempi di risposta entro 5 secondi
 - [ ] RNF3: Scalabilità: Il sistema deve essere in grado di integrare future espansioni senza troppe difficoltà
 - [ ] RNF4: Affidabilità: Il sistema dovrà garantire dei tempi di esecuzione di almeno 15h filate, con un massimo di 2h di "down-time" per manutenzione programmata
-- [ ] RNF5: Sicurezza e privacy: Il sistema dovrà garantire uno pseudo-anonimato nella raccolta delle informazioni necessarie (Nickname e mail) 
+- [ ] RNF5: Sicurezza e privacy: Il sistema dovrà garantire uno pseudo-anonimato nella raccolta delle informazioni necessarie (Username, mail e password) 
 - [ ] RNF6: Accessibilità: Il sistema deve essere usufruibile da utenti affetti da disabilità
 - [ ] RNF7: Lingua: Il sistema sarà in Italiano e in Inglese
 - [ ] RNF8: Facilità d'uso: Il sistema, grazie ad un tutorial introduttivo, deve essere facilmente fruibile anche per utenti poco avvezzi all'uso di internet e dello smartphone
@@ -182,3 +185,41 @@ Questo use case descrive come l'utente inserisce le preferenze dei veicoli all'i
 ##### Eccezioni:
 1. Se l'utente non seleziona alcun tipo di preferenze, allora l'applicazione lo avvisa di ciò, ricordandogli di selezionarne almeno una
 
+### Operatore e Admin:
+RF5: Richieste utenti
+RF6: Statistiche
+RF11: Modifiche
+RF12: Gestione utenti
+![[UCD RF5, RF6, RF11, RF12.drawio.svg]]
+#### Use case RF5: Richieste utenti
+##### Riassunto:
+Questo use case descrive 
+##### Descrizione:
+
+##### Eccezioni:
+
+##### Estensioni:
+#### Use case RF6: Statistiche
+##### Riassunto:
+Questo use case descrive 
+##### Descrizione:
+
+##### Eccezioni:
+
+##### Estensioni:
+#### Use case RF11: Modifiche
+##### Riassunto:
+Questo use case descrive 
+##### Descrizione:
+
+##### Eccezioni:
+
+##### Estensioni:
+#### Use case RF12: Gestione utenti
+##### Riassunto:
+Questo use case descrive 
+##### Descrizione:
+
+##### Eccezioni:
+
+##### Estensioni:
