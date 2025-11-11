@@ -76,9 +76,9 @@ Per il cittadino:
 
 ### Requisiti funzionali Utente
 - [x] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
-- [ ] RF8: Ricevuta di consegna: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
-- [ ] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
-- [ ] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
+- [x] RF8: Ricevuta di consegna: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
+- [x] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
+- [x] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
 
 ## 3. Requisiti Non Funzionali
 - [ ] RNF1: Compatibilità: Il sistema deve essere compatibile con i seguenti browser: Chrome (inserisci versione) e Firefox (inserisci versione)
@@ -116,7 +116,7 @@ Questo use case descrive come l’utente anonimo effettua il login nella webapp
 2. Se l'utente inserisce all'interno degli appositi campi username e password e preme il pulsante "Login", si apre la schermata principale dell'applicazione \[eccezione 1]
 3. Se l'utente (in alternativa a descrizione 2) preme sul pulsante "Login with Google", dovrà inserire le proprie credenziali di Google in apposite schermate per poi arrivare alla pagina principale dell'app \[eccezione 1]
 ##### Eccezioni:
-1. Se l'utente inserisce credenziali errate, si ripresenta nuovamente sulla schermata di login per reinserire quelle corrette
+1. Se l'utente inserisce credenziali errate o inesistenti, si ripresenta nuovamente sulla schermata di login per reinserire quelle corrette
 
 ### Utente Base:
 RF3: Ricerca
@@ -169,12 +169,17 @@ Questo use case descrive come l'utente capisce che la sua richiesta ha effettiva
 ##### Riassunto:
 Questo use case descrive come l'utente può visualizzare le alternative proposte dall'app
 ##### Descrizione:
-1. L'utente, dopo aver inserito una richiesta di tratta
+1. L'utente, dopo aver inserito una richiesta di tratta, potrà visualizzare percorsi e veicoli alternativi che soddisfano le richieste e preferenze \[eccezione 1] \[eccezione 2]
+2. L'utente potrà poi selezionare ciò che preferisce, in modo che l'applicazione fornisca quel percorso come principale da visualizzare la giornata successiva
 ##### Eccezioni:
-##### Estensioni:
+1. Se l'utente non ha selezionato abbastanza preferenze da poter coprire il suo tragitto (es: per il tragitto dell'utente le uniche opzioni possibili sono "bicicletta" e "monopattino", ma ha selezionato solo "autobus"), allora darà un messaggio del tipo: "Viaggio non fattibile in base alle tue preferenze" e farà vedere le tratte calcolate con altri veicoli non preferenziali. 
+2. Se l'utente ha richiesto una tratta impossibile da fare con i mezzi disponibili nell'app, allora suggerisce di esplorare alternative che Make Your Move attualmente non copre
 #### Use case RF10: Inserimento preferenze
 ##### Riassunto:
-Questo use case descrive
+Questo use case descrive come l'utente inserisce le preferenze dei veicoli all'interno dell'app
 ##### Descrizione:
+1. L'utente interagisce con l'apposito menù a tendina e seleziona la voce "PREFERENZE"
+2. L'utente seleziona poi i veicoli che preferisce usare e che possiede \[eccezione 1]
 ##### Eccezioni:
-##### Estensioni:
+1. Se l'utente non seleziona alcun tipo di preferenze, allora l'applicazione lo avvisa di ciò, ricordandogli di selezionarne almeno una
+
