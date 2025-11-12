@@ -217,17 +217,17 @@ Questo use case descrive come operatori e admin possono interagire con le statis
 Questo use case descrive come l'admin possa effettuare modifiche all'applicazione
 ##### Descrizione:
 1. L'admin clicca sul pulsante per accedere al database
-2. Una volta nel database, l'admin può aggiungere, modificare e cancellare utenti, operatori, fermate, stazioni di biciclette e monopattini \[estensione 1]
+2. Una volta nel database, l'admin può aggiungere, modificare e cancellare fermate, stazioni di biciclette e monopattini \[estensione 1]
 ##### Estensioni:
-1. Se le modifiche sono da apportare a stazioni e fermate, allora esiste anche l'opzione di disabilitarle temporaneamente
+1. Se le modifiche sono da apportare alle fermate, allora esiste anche l'opzione di disabilitarle temporaneamente
 #### Use case RF12: Gestione utenti
 ##### Riassunto:
-Questo use case descrive 
+Questo use case descrive come gli admin possano gestire gli utenti e i relativi permessi
 ##### Descrizione:
-
+1. L'admin clicca sul pulsante per accedere al database
+2. Una volta nel database, l'admin può aggiungere, modificare e cancellare utenti base, operatori e altri admin \[eccezione 1]
 ##### Eccezioni:
-
-##### Estensioni:
+1. L'admin non può modificare permessi a se stesso
 ## 5. User Story
 ### User Story 1 - Associata allo Use Case RF1:  Registrazione
 #### Scelta tra credenziali locali o autenticazione tramite google
