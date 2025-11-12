@@ -236,7 +236,6 @@ Come qualsiasi tipo di utente, voglio decidere personalmente se quando voglio cr
 - Tutti i tipi di utente possono scegliere tra la registrazione con Google o in locale
 - Dopo una registrazione riuscita viene inviata la mail e si viene reindirizzati alla schermata di login
 - Se avviene una registrazione errata (es. caratteri non ammessi o account google non esistente) devono apparire messaggi di errore adeguati.
-
 #### TASKS - User Story 1
 1. Integrare entrambe le opzioni di registrazione(locale, Google)
 2. Configurare il flusso decisionale della registrazione
