@@ -150,7 +150,7 @@ Questo use case descrive come l'utente può interagire con la mappa
 Questo use case descrive come l'utente può richiedere la tratta per il bus dinamico
 ##### Descrizione:
 1. L'utente preme sul pulsante "RICHIEDI TRATTA" per poter inserire la richiesta del proprio spostamento
-2. L'utente dovrà compilare un form inserendo il luogo e l'ora sia del punto di partenza, che quello di arrivo \[eccezione 1] \[estensione 1] 
+2. L'utente dovrà compilare un form inserendo il luogo e l'ora sia del punto di partenza, che quello di arrivo \[eccezione 1] \[estensione 1] \[estensione 3] \[estensione 4]
 3. L'utente, una volta inserito tutto il necessario, clicca il pulsante "CONFERMA E INVIA" \[eccezione 2]  \[estensione 2]
 ##### Eccezioni:
 1. Se l'utente inserisce un luogo o un orario non valido (es: partenza da Piazza Venezia alle 10:00 e arrivo al Polo Ferrari Povo 1 alle 10:01), il sistema darà errore e non permetterà l'invio del form fino a quando gli errori non sono stati corretti
@@ -158,6 +158,8 @@ Questo use case descrive come l'utente può richiedere la tratta per il bus dina
 ##### Estensioni:
 1. Nel form ci sarà la possibilità di impostare quella tratta come "TRATTA FREQUENTE" e per quali periodi di tempo (esempio: ogni settimana, dal lunedì al venerdì), in modo da dover evitare l'inserimento manuale dello stesso percorso ogni volta
 2. Se l'utente desidera cancellare la tratta, può selezionare la richiesta fatta e cliccare sul pulsante "CANCELLA TRATTA"
+3. Se l'utente deve prenotare per meno di 10 persone in un unico blocco (es: mamma con i suoi 2 figli), allora dovrà inserire nel form il numero di persone
+4. Se l'utente deve prenotare per 10 o più persone (es: insegnante delle elementari con 11 studenti), allora dovrà inserire anche il numero di partecipanti e aspettare che un operatore processi la richiesta
 #### Use case RF8: Ricevuta di consegna
 ##### Riassunto:
 Questo use case descrive come l'utente capisce che la sua richiesta ha effettivamente "attivato" la linea dinamica
@@ -197,20 +199,22 @@ RF12: Gestione utenti
 Questo use case descrive come operatori e admin possono gestire le richieste
 ##### Descrizione:
 1. l'operatore/admin clicca sull'icona apposita per vedere le richieste effettuate dagli utenti
-2. l'operatore/admin elabora le richieste, generando la tratta nei momenti e luoghi di richiesta più elevata \[eccezione 1]
+2. l'operatore/admin elabora le richieste, generando la tratta nei momenti e luoghi di richiesta più elevata \[eccezione 1] \[estensione 1]
 ##### Eccezioni:
 1. Se le richieste degli utenti sono poche e/o parecchio sparse in giro per il territorio, allora la tratta dinamica non verrà creata per la giornata successiva
+##### Estensioni:
+1. Se la richiesta è stata effettuata da una persona affetta da disabilità o per un gruppo consistente di persone (ovvero dalle 10 in su), si verrà contattati via mail da un operatore per confermare o aggiungere dettagli ulteriori
 #### Use case RF6: Statistiche
 ##### Riassunto:
-Questo use case descrive come
+Questo use case descrive come operatori e admin possono interagire con le statistiche
 ##### Descrizione:
-
-##### Eccezioni:
-
+1. l'operatore/admin clicca sull'icona apposita per vedere le statistiche degli utenti che usufruiscono dell'app
+2. Ad operatore/admin si presenteranno diverse viste/grafici per la lettura dei dati che riguarderanno zona, ora (sia di partenza che di arrivo) e modalità usata per la mobilitazione \[estensione 1]
 ##### Estensioni:
+1. Se operatore/admin desidera visualizzare nel dettaglio i singoli utenti e che meta effettuano spesso, può selezionare il singolo utente per vedere le sue statistiche
 #### Use case RF11: Modifiche
 ##### Riassunto:
-Questo use case descrive come 
+Questo use case descrive come l'admin 
 ##### Descrizione:
 
 ##### Eccezioni:
