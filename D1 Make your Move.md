@@ -214,12 +214,12 @@ Questo use case descrive come operatori e admin possono interagire con le statis
 1. Se operatore/admin desidera visualizzare nel dettaglio i singoli utenti e che meta effettuano spesso, può selezionare il singolo utente per vedere le sue statistiche
 #### Use case RF11: Modifiche
 ##### Riassunto:
-Questo use case descrive come l'admin 
+Questo use case descrive come l'admin possa effettuare modifiche all'applicazione
 ##### Descrizione:
-
-##### Eccezioni:
-
+1. L'admin clicca sul pulsante per accedere al database
+2. Una volta nel database, l'admin può aggiungere, modificare e cancellare utenti, operatori, fermate, stazioni di biciclette e monopattini \[estensione 1]
 ##### Estensioni:
+1. Se le modifiche sono da apportare a stazioni e fermate, allora esiste anche l'opzione di disabilitarle temporaneamente
 #### Use case RF12: Gestione utenti
 ##### Riassunto:
 Questo use case descrive 
