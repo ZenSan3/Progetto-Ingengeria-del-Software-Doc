@@ -55,7 +55,7 @@ Per il cittadino:
 
 ### Limiti dell'applicazione:
 - Dipendenza da una connessione internet: La nostra webapp necessita di una connessione internet per poter usufruire delle funzionalità
-- Accessibilità limitata per utenti non digitali: sebbene MakeYourMove sia pensata per essere facile e veloce da usare, gli utenti con poca familiarità con gli smartphone potrebbero fare fatica ad utilizzare l'app al pieno delle potenzialità.
+- Accessibilità limitata per utenti non digitali: sebbene Make Your Move sia pensata per essere facile e veloce da usare, gli utenti con poca familiarità con gli smartphone potrebbero fare fatica ad utilizzare l'app al pieno delle potenzialità.
 - Poche possibilità per gli utenti con disabilità: L'app non è usufruibile a pieno da utenti affetti da disabilità visive, rendendo quindi alcune possibilità/alternative non fattibili.
 - Manutenzione e aggiornamenti: La webapp potrebbe non essere usufruibile per brevi periodi di tempo, in orari non di punta, per manutenzioni programmate o malfunzionamenti, che comunque non supereranno il quantitativo di tempo prestabilito (RNF4).
 - Sicurezza e Privacy: sebbene l'applicazione sia pensata per rispettare norme di sicurezza e privacy nei confronti dell'utente, potrebbe non essere del tutto esente dal rischio di potenziali attacchi e violazioni informatiche, compromettendo di conseguenza i dati sensibili inseriti
@@ -71,8 +71,8 @@ Per il cittadino:
 - [x] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
 
 ### Requisiti funzionali Operatore
-- [ ] RF5: Richieste utenti: Il sistema deve garantire agli admin di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7) e di poterle accettare o rifiutarle
-- [ ] RF6: Statistiche: Il sistema deve poter permettere agli admin di visualizzare le statistiche riguardanti le richieste e le persone effettivamente salite
+- [ ] RF5: Richieste utenti: Il sistema deve garantire agli operatori di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7) e di poterle accettare o rifiutarle
+- [ ] RF6: Statistiche: Il sistema deve poter permettere agli operatori di visualizzare le statistiche riguardanti le richieste e le persone effettivamente salite
 
 ### Requisiti funzionali Utente
 - [x] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
@@ -88,7 +88,6 @@ Per il cittadino:
 - [ ] RNF2: Performance: Il sistema deve garantire tempi di risposta rapidi e prestazioni efficienti, in modo tale che ogni operazione, come il login, la registrazione o la prenotazione di una tratta, venga completata entro un massimo di 2 secondi per il 95% delle richieste. Questo requisito deve essere mantenuto anche durante i picchi di utilizzo, con un carico simultaneo di almeno 100 utenti connessi al sistema. Il sistema deve inoltre scalare facilmente per supportare un numero crescente di utenti senza compromettere le prestazioni.
 - [ ] RNF3: Scalabilità: Il sistema deve essere progettato per garantire la scalabilità, consentendo la gestione efficiente di qualsiasi tipo di operazione fino a un massimo di 50.000 utenti simultanei. Il software dovrà mantenere prestazioni ottimali (RNF2) anche con un elevato numero di accessi contemporanei, senza compromettere la velocità di risposta o la stabilità del sistema. Il design architetturale dovrà supportare l'espansione futura, permettendo l'incremento delle risorse in base alle esigenze di crescita dell'utenza.
 - [ ] RNF4: Affidabilità: Il sistema deve garantire un'affidabilità, con una disponibilità minima del **99%**, il che corrisponde a un downtime massimo di **3 giorni, 15 ore e 36 minuti** all'anno. Il software deve essere progettato per minimizzare i tempi di inattività pianificati e non pianificati, garantendo un accesso continuo ai servizi, anche durante periodi di picco di utilizzo.
-- [ ] RNF5: Sicurezza e privacy: Il sistema dovrà garantire uno pseudo-anonimato nella raccolta delle informazioni necessarie (Username, mail e password)
 - [ ] RNF5: Sicurezza e privacy: Il sistema deve aderire ai principi di **Privacy by Design** e **minimizzazione dei dati**, raccogliendo solo le informazioni strettamente necessarie per l'erogazione del servizio (es. Username, email). Tutte le password e i dati sensibili non devono mai essere memorizzati in chiaro. Deve essere imposto l'uso di algoritmi di hashing moderni e sicuri. Tutte le comunicazioni tra client e server devono avvenire esclusivamente tramite protocolli sicuri (HTTPS con TLS 1.2 o superiore).
 - [ ] RNF6: Accessibilità: Il sistema sarà progettato per garantire un livello di accessibilità di base, aderendo ai requisiti minimi di conformità **WCAG 2.1 (Web Content Accessibility Guidelines) al Livello A**. Questo impegno assicura la rimozione delle barriere all'accessibilità più significative, ponendo le fondamenta per un'interazione fruibile da parte degli utenti con disabilità.
 - [ ] RNF7: Lingua: Il sistema deve offrire agli utenti la possibilità di cambiare la lingua dell'interfaccia tra una delle seguenti opzioni: Italiano, Inglese e Tedesco. L'utente deve poter selezionare e modificare la lingua preferita in modo intuitivo, e la scelta deve essere mantenuta per le sessioni future.
@@ -198,13 +197,12 @@ RF12: Gestione utenti
 Questo use case descrive come operatori e admin possono gestire le richieste
 ##### Descrizione:
 1. l'operatore/admin clicca sull'icona apposita per vedere le richieste effettuate dagli utenti
-2. l'operatore/admin  
+2. l'operatore/admin elabora le richieste, generando la tratta nei momenti e luoghi di richiesta più elevata \[eccezione 1]
 ##### Eccezioni:
-
-##### Estensioni:
+1. Se le richieste degli utenti sono poche e/o parecchio sparse in giro per il territorio, allora la tratta dinamica non verrà creata per la giornata successiva
 #### Use case RF6: Statistiche
 ##### Riassunto:
-Questo use case descrive 
+Questo use case descrive come
 ##### Descrizione:
 
 ##### Eccezioni:
