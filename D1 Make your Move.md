@@ -254,9 +254,23 @@ Come utente, operatore o admin, voglio effettuare login con credenziali locali o
 - Tutti i tipi di utente possono scegliere tra l'accesso con Google o in locale
 - Dopo un accesso riuscito si viene indirizzati alla schermata principale dell'applicazione
 - Se avviene un login errato (es. caratteri non ammessi o account non registrato) devono apparire messaggi di errore adeguati.
-#### TASKS - User Story 1
+#### TASKS - User Story 2
 1. Integrare entrambe le opzioni di accesso (locale, Google)
 2. Configurare il flusso decisionale dell'accesso
 3. Gestire le azioni da fare dopo che l'accesso va a buon fine
 4. Testare che entrambe le modalità di accesso vadano a buon fine
 5. Implementare i messaggi di errore per ogni metodo
+### User Story 3 - Associata allo Use Case RF3: Ricerca
+#### Ricerca di luoghi e stazioni
+Come utente voglio effettuare una ricerca in modo da selezionare il luogo per la tratta
+#### Criteri di accettazione
+- Tutti i tipi di utente possono cercare le stazioni e i luoghi
+- Tutti i luoghi e tutte le stazioni devono poter essere cercate
+- Il sistema restituisce una lista di risultati coerente ai criteri di ricerca inseriti
+- Se non vengono trovati risultati, devono apparire messaggi informativi adeguati.
+#### TASKS - User Story 3
+1. Creare il campo di ricerca nella UI, aggiungendo placeholder e istruzioni per renderlo più intuitivo all'utente
+2. Implementare la logica di ricerca
+3. Recuperare e visualizzare i risultati della ricerca
+4. Testare la funzionalità di ricerca
+5. Gestire i casi senza risultati
