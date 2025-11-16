@@ -1,5 +1,15 @@
+1. US1: registrazione credenziali
+2. US2:
+3. US3:
+4. US4:
+5. US5:
+6. US6:
+7. US7:
+8. US8:
+9. US9:
+10. US10:
 ## 5. User Story
-### User Story 1 - Associata allo Use Case RF1:  Registrazione
+### User Story 1 - Associata allo Use Case RF1: Registrazione
 #### Scelta tra credenziali locali o autenticazione tramite google
 Come qualsiasi tipo di utente, voglio decidere personalmente se quando voglio creare l'account usare credenziali locali oppure se usare il sistema di autenticazione di Google in modo da scegliere quello che preferisco
 #### Criteri di accettazione
