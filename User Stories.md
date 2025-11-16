@@ -1,5 +1,5 @@
 1. US1: registrazione credenziali
-2. US2:
+2. US2: 
 3. US3:
 4. US4:
 5. US5:
