@@ -18,9 +18,10 @@
 2. Requisiti Funzionali
 3. Requisiti Non Funzionali
 4. Use case Diagram
-5. 5. User Stories
+5. User Stories
 
 ## 1\. Il progetto Make your Move
+### Problema
 
 ![[1_Problematiche.jpg]]
 Il problema che abbiamo identificato riguarda una macro-categoria, ovvero traffico e viabilità. A Trento, per esempio, non è difficile trovare strade congestionate (specialmente in fasce orarie "di punta") a causa del traffico che talvolta diventa anche insostenibile, con pesanti ripercussioni sull'ambiente, e sui cittadini.
@@ -28,20 +29,13 @@ Effettuando interviste ad amici e parenti, abbiamo notato che, chi vorrebbe util
 Abbiamo inoltre osservato che, per quanto riguarda gli autobus, la domanda non è sempre seguita dall'offerta. Il cittadino si trova di fronte a due problemi principali:
 - Pochi autobus ma molto pieni. Questo non solo causa problemi di sicurezza a bordo del veicolo, ma suggerisce un problema organizzativo e porta i cittadini a scegliere soluzioni alternative, spesso più inquinanti.
 - Molti autobus quasi vuoti. Queste risorse potrebbero essere ricollocate altrove, dove c'è un reale bisogno.
+### Soluzione
 
 ![[2_Soluzione.jpg]]
 Il progetto ha come obiettivo la realizzazione di un’applicazione web per aiutare i cittadini a spostarsi nel comune di Trento. Il core di Make Your Move consiste infatti nella creazione di tratte dinamiche per le linee autobus. La tratta viene calcolata subito prima dell'inizio del turno, in base alle segnalazioni raccolte dagli utenti, ovvero Il punto di partenza, quello di arrivo e i relativi orari. Arriverà poi una notifica all'utente su quale sarà il suo bus, dove e quando giungerà.
-
-### Q&A:
-- *Non è confusionario il fatto che delle linee verranno modificate ogni giorno?*
-- Make your Move non andrà a modificare tratte già preesistenti, ma verrà creata una linea apposita (nome in codice, "linea D") in modo da generare meno confusione possibile, specialmente tra i nostri utenti più abitudinari :)
-- *Se mi dimentico di inserire la tratta per il giorno successivo come faccio ad arrivare a destinazione? Mi tocca per forza usare il mezzo personale?*
-- Non necessariamente. Make your Move salva le tratte che l'utente ha considerato come "abitudinarie". In caso il percorso desiderato sia "straordinario" e/o l'utente si è dimenticato di inserirlo, l'applicazione propone (in base a disponibilità e preferenze) mezzi pubblici alternativi come linee autobus tradizionali, monopattini elettrici o biciclette. Il veicolo personale (inteso come auto o moto) resterà disponibile in extremis. 
-- *Sono un utente con disabilità fisiche. L'applicazione può adattarsi alle mie esigenze?*
-- Certamente! Make Your Move al momento della registrazione chiederà le preferenze dei veicoli che l'applicazione offre, in modo che sia utenti con bisogni speciali che persone che preferiscono evitare alcune opzioni, possano personalizzare i loro percorsi con serenità.
+### Vantaggi
 
 ![[3_Vantaggi.jpg]]
-### Pro e Contro
 I vantaggi che si otterranno con l'utilizzo della webapp sono molteplici.
 Per il comune:
 - Miglioramento della viabilità: la maggiore pianificazione degli itinerari dei cittadini consente un flusso del traffico sensibilmente più efficiente.
@@ -62,6 +56,17 @@ Per il cittadino:
 - Integrazione con sistemi esistenti: la compatibilità e l'integrazione futura con sistemi esistenti potrebbe risultare difficoltosa con sistemi attualmente in uso 
 - Dipendenza dall'infrastruttura tecnica: Le prestazioni dell'applicazioni dipendono dalla qualità e dalla capacità dei server. Di conseguenza, se l'hardware non soddisfa queste due proprietà, potrebbero presentarsi problemi sul servizio (N.B: RNF2 è stato scritto presupponendo che l'hardware sia adeguato per le richieste)
 - Possibili costi iniziali per il comune e per Trentino Trasporti: l'implementazione del servizio può comportare un piccolo investimento iniziale riguardo la formazione del personale, l'investimento di nuove risorse e la possibile integrazione con sistemi già esistenti.
+### Q&A:
+- *Quale sarebbe la funzionalità principale dell'applicazione?*
+- L'obbiettivo principale di Make Your Move consiste nella generazione dinamica di linee per autobus (nome in codice: "linea D") basate sulle richieste reali degli utenti. Percorso e orari vengono calcolati la sera prima, ottimizzando così tragitto, tempi di attesa e carico dei passeggeri
+- *Non è confusionario il fatto che delle linee verranno modificate ogni giorno?*
+- Make your Move non andrà a modificare tratte già preesistenti, ma verrà creata una linea apposita (nome in codice, "linea D") in modo da generare meno confusione possibile, specialmente tra i nostri utenti più abitudinari :)
+- *Se mi dimentico di inserire la tratta per il giorno successivo come faccio ad arrivare a destinazione? Mi tocca per forza usare il mezzo personale?*
+- Non necessariamente. Make your Move salva le tratte che l'utente ha considerato come "abitudinarie". In caso il percorso desiderato sia "straordinario" e/o l'utente si è dimenticato di inserirlo, l'applicazione propone (in base a disponibilità e preferenze) mezzi pubblici alternativi come linee autobus tradizionali, monopattini elettrici o biciclette. Il veicolo personale (inteso come auto o moto) resterà disponibile in extremis. 
+- *Perchè nell'applicazione c'è la possibilità di selezionare più veicoli? Non generava tratte dinamiche per autobus?*
+- Sì, Make Your Move è una webapp che genera linee dinamiche per gli autobus. La disponibilità di altri mezzi è stata pensata per fornire un ulteriore supporto alla mobilità in caso la "linea D" non passasse nei pressi dell'utente che ne ha fatto richiesta
+- *Sono un utente con disabilità fisiche. L'applicazione può adattarsi alle mie esigenze?*
+- Certamente! Make Your Move al momento della registrazione chiederà le preferenze dei veicoli che l'applicazione offre, in modo che sia utenti con bisogni speciali che persone che preferiscono evitare alcune opzioni, possano personalizzare i loro percorsi con serenità.
 
 ## 2. Requisiti Funzionali
 ### Requisiti funzionali comuni ad Admin, Operatore e Utente Base
@@ -86,8 +91,8 @@ Per il cittadino:
 ## 3. Requisiti Non Funzionali
 - [ ] RNF1: Compatibilità: Il sistema deve essere pienamente compatibile con i seguenti browser: Chrome/Chromium 105 o superiore e Safari 16.4 o superiore. Il software deve garantire un'esperienza utente coerente e funzionale su tutte le piattaforme supportate, assicurando la corretta visualizzazione delle interfacce e il pieno funzionamento di tutte le funzionalità, indipendentemente dal browser utilizzato.
 - [ ] RNF2: Performance: Il sistema deve garantire tempi di risposta rapidi e prestazioni efficienti, in modo tale che ogni operazione, come il login, la registrazione o la prenotazione di una tratta, venga completata entro un massimo di 2 secondi per il 95% delle richieste. Questo requisito deve essere mantenuto anche durante i picchi di utilizzo, con un carico simultaneo di almeno 100 utenti connessi al sistema. Il sistema deve inoltre scalare facilmente per supportare un numero crescente di utenti senza compromettere le prestazioni.
-- [ ] RNF3: Scalabilità: Il sistema deve essere progettato per garantire la scalabilità, consentendo la gestione efficiente di qualsiasi tipo di operazione fino a un massimo di 50.000 utenti simultanei. Il software dovrà mantenere prestazioni ottimali (RNF2) anche con un elevato numero di accessi contemporanei, senza compromettere la velocità di risposta o la stabilità del sistema. Il design architetturale dovrà supportare l'espansione futura, permettendo l'incremento delle risorse in base alle esigenze di crescita dell'utenza.
-- [ ] RNF4: Affidabilità: Il sistema deve garantire un'affidabilità, con una disponibilità minima del **99%**, il che corrisponde a un downtime massimo di **3 giorni, 15 ore e 36 minuti** all'anno. Il software deve essere progettato per minimizzare i tempi di inattività pianificati e non pianificati, garantendo un accesso continuo ai servizi, anche durante periodi di picco di utilizzo.
+- [ ] RNF3: Scalabilità: Il sistema deve essere progettato per garantire la scalabilità, consentendo la gestione efficiente di qualsiasi tipo di operazione fino a un massimo di 10.000 utenti simultanei. Il software dovrà mantenere prestazioni ottimali (RNF2) anche con un elevato numero di accessi contemporanei, senza compromettere la velocità di risposta o la stabilità del sistema. Il design architetturale dovrà supportare l'espansione futura, permettendo l'incremento delle risorse in base alle esigenze di crescita dell'utenza.
+- [ ] RNF4: Affidabilità: Il sistema deve garantire un'affidabilità, con una disponibilità minima del **95%**, il che corrisponde a un downtime massimo di **18 giorni e 6 ore** all'anno. Il software deve essere progettato per minimizzare i tempi di inattività pianificati e non pianificati, garantendo un accesso continuo ai servizi, anche durante periodi di picco di utilizzo.
 - [ ] RNF5: Sicurezza e privacy: Il sistema deve aderire ai principi di **Privacy by Design** e **minimizzazione dei dati**, raccogliendo solo le informazioni strettamente necessarie per l'erogazione del servizio (es. Username, email). Tutte le password e i dati sensibili non devono mai essere memorizzati in chiaro. Deve essere imposto l'uso di algoritmi di hashing moderni e sicuri. Tutte le comunicazioni tra client e server devono avvenire esclusivamente tramite protocolli sicuri (HTTPS con TLS 1.2 o superiore).
 - [ ] RNF6: Accessibilità: Il sistema sarà progettato per garantire un livello di accessibilità di base, aderendo ai requisiti minimi di conformità **WCAG 2.1 (Web Content Accessibility Guidelines) al Livello A**. Questo impegno assicura la rimozione delle barriere all'accessibilità più significative, ponendo le fondamenta per un'interazione fruibile da parte degli utenti con disabilità.
 - [ ] RNF7: Lingua: Il sistema deve offrire agli utenti la possibilità di cambiare la lingua dell'interfaccia tra una delle seguenti opzioni: Italiano, Inglese e Tedesco. L'utente deve poter selezionare e modificare la lingua preferita in modo intuitivo, e la scelta deve essere mantenuta per le sessioni future.
