@@ -58,14 +58,14 @@ Per il cittadino:
 - Possibili costi iniziali per il comune e per Trentino Trasporti: l'implementazione del servizio può comportare un piccolo investimento iniziale riguardo la formazione del personale, l'investimento di nuove risorse e la possibile integrazione con sistemi già esistenti.
 ### Q&A:
 - *Quale sarebbe la funzionalità principale dell'applicazione?*
-- L'obbiettivo principale di Make Your Move consiste nella generazione dinamica di linee per autobus (nome in codice: "linea D") basate sulle richieste reali degli utenti. Percorso e orari vengono calcolati la sera prima, ottimizzando così tragitto, tempi di attesa e carico dei passeggeri
+- L'obbiettivo principale di Make Your Move consiste nella generazione dinamica di linee per autobus basate sulle richieste reali degli utenti. Percorso e orari vengono calcolati la sera prima, ottimizzando così tragitto, tempi di attesa e carico dei passeggeri
 - *Non è confusionario il fatto che delle linee verranno modificate ogni giorno?*
 - Make your Move non andrà a modificare tratte già preesistenti, ma verrà creata una linea apposita (nome in codice, "linea D") in modo da generare meno confusione possibile, specialmente tra i nostri utenti più abitudinari :)
 - *Se mi dimentico di inserire la tratta per il giorno successivo come faccio ad arrivare a destinazione? Mi tocca per forza usare il mezzo personale?*
 - Non necessariamente. Make your Move salva le tratte che l'utente ha considerato come "abitudinarie". In caso il percorso desiderato sia "straordinario" e/o l'utente si è dimenticato di inserirlo, l'applicazione propone (in base a disponibilità e preferenze) mezzi pubblici alternativi come linee autobus tradizionali, monopattini elettrici o biciclette. Il veicolo personale (inteso come auto o moto) resterà disponibile in extremis. 
 - *Perchè nell'applicazione c'è la possibilità di selezionare più veicoli? Non generava tratte dinamiche per autobus?*
 - Sì, Make Your Move è una webapp che genera linee dinamiche per gli autobus. La disponibilità di altri mezzi è stata pensata per fornire un ulteriore supporto alla mobilità in caso la "linea D" non passasse nei pressi dell'utente che ne ha fatto richiesta
-- *Sono un utente con disabilità fisiche. L'applicazione può adattarsi alle mie esigenze?*
+- *Sono un utente con disabilità. L'applicazione può adattarsi alle mie esigenze?*
 - Certamente! Make Your Move al momento della registrazione chiederà le preferenze dei veicoli che l'applicazione offre, in modo che sia utenti con bisogni speciali che persone che preferiscono evitare alcune opzioni, possano personalizzare i loro percorsi con serenità.
 
 ## 2. Requisiti Funzionali
@@ -234,16 +234,17 @@ Questo use case descrive come gli admin possano gestire gli utenti e i relativi 
 ##### Eccezioni:
 1. L'admin non può modificare permessi a se stesso
 ## 5. User Story
-### User Story 1 - Associata allo Use Case RF1:  Registrazione
-#### Scelta tra credenziali locali o autenticazione tramite google
-Come qualsiasi tipo di utente, voglio decidere personalmente se quando voglio creare l'account usare credenziali locali oppure se usare il sistema di autenticazione di Google in modo da scegliere quello che preferisco
+### User Story 1 - Associata allo Use Case RF1: Registrazione
+#### Scelta tra credenziali locali o autenticazione tramite Google
+Come utente, operatore o admin, voglio registrarmi con credenziali locali o con il sistema di autenticazione di Google in modo da scegliere quello che preferisco
 #### Criteri di accettazione
 - Tutti i tipi di utente possono scegliere tra la registrazione con Google o in locale
 - Dopo una registrazione riuscita viene inviata la mail e si viene reindirizzati alla schermata di login
-- Se avviene una registrazione errata (es. caratteri non ammessi o account google non esistente) devono apparire messaggi di errore adeguati.
+- Se avviene una registrazione errata (es. caratteri non ammessi o account Google non esistente) devono apparire messaggi di errore adeguati.
 #### TASKS - User Story 1
-1. Integrare entrambe le opzioni di registrazione(locale, Google)
+1. Integrare entrambe le opzioni di registrazione (locale, Google)
 2. Configurare il flusso decisionale della registrazione
 3. Gestire le azioni da fare dopo che la registrazione va a buon fine
 4. Testare che entrambe le registrazioni vadano a buon fine
 5. Implementare i messaggi di errore per ogni metodo
+### User Story 2 - Associata allo Use Case 
