@@ -274,3 +274,13 @@ Come utente voglio effettuare una ricerca in modo da selezionare il luogo per la
 3. Recuperare e visualizzare i risultati della ricerca
 4. Testare la funzionalità di ricerca
 5. Gestire i casi senza risultati
+### User Story 4 - Associata allo Use Case RF4: Mappa
+#### Visualizzazione e interazione con la mappa
+Come utente voglio visualizzare una mappa interattiva in modo da scegliere fermate e vedere i percorsi generati
+#### Criteri di accettazione
+- Tutti i tipi di utente possono visualizzare e interagire con la mappa
+- Tutti i punti di interesse devono poter essere visualizzati ed essere interagibili dalla mappa
+#### TASKS - User Story 4
+1. Integrare la mappa nella UI dell'applicazione
+2. Gestire le azioni dopo l'interazione del punto d'interesse
+3. Testare le funzionalità della mappa
