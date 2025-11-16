@@ -208,7 +208,7 @@ Questo use case descrive come operatori e admin possono gestire le richieste
 ##### Eccezioni:
 1. Se le richieste degli utenti sono poche e/o parecchio sparse in giro per il territorio, allora la tratta dinamica non verrà creata per la giornata successiva
 ##### Estensioni:
-1. Se la richiesta è stata effettuata da una persona affetta da disabilità o per un gruppo consistente di persone (ovvero dalle 10 in su), si verrà contattati via mail da un operatore per confermare o aggiungere dettagli ulteriori
+1. Se la richiesta è stata effettuata da una persona affetta da disabilità o per un gruppo consistente di persone (ovvero dalle 10 in su), l'operatore/admin contatterà via mail l'utente per confermare o aggiungere dettagli ulteriori
 #### Use case RF6: Statistiche
 ##### Riassunto:
 Questo use case descrive come operatori e admin possono interagire con le statistiche
@@ -284,3 +284,14 @@ Come utente voglio visualizzare una mappa interattiva in modo da scegliere ferma
 1. Integrare la mappa nella UI dell'applicazione
 2. Gestire le azioni dopo l'interazione del punto d'interesse
 3. Testare le funzionalità della mappa
+### User Story 5 - Associata allo Use Case RF5: Richieste utenti
+#### Gestione delle richieste effettuate dagli utenti
+Come operatore e admin voglio visualizzare e gestire le richieste in modo da poterle accettare generare la tratta di conseguenza
+#### Criteri di accettazione
+- Solo operatori e admin possono visualizzare e gestire le richieste degli utenti
+- Solo le richieste "future", ovvero compilate per una tratta ancora da generare, possono essere modificate, accettate o revocate
+- Se le richieste non raggiungono un numero di utenti adeguato o sono troppo sparsi in giro per il territorio, devono apparire messaggi informativi riguardo la "non fattibilità" della tratta
+#### TASKS - User Story 5
+1. Integrare la visualizzazione delle richieste nella UI
+2. Dare la possibilità di modifica, accettazione e revoca della richiesta
+3. Testare le funzionalità di modifica, accettazione e revoca
