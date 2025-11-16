@@ -247,4 +247,16 @@ Come utente, operatore o admin, voglio registrarmi con credenziali locali o con 
 3. Gestire le azioni da fare dopo che la registrazione va a buon fine
 4. Testare che entrambe le registrazioni vadano a buon fine
 5. Implementare i messaggi di errore per ogni metodo
-### User Story 2 - Associata allo Use Case 
+### User Story 2 - Associata allo Use Case RF2: Login
+#### Scelta tra credenziali locali o autenticazione tramite Google
+Come utente, operatore o admin, voglio effettuare login con credenziali locali o con il sistema di autenticazione di Google in modo da scegliere quello che preferisco
+#### Criteri di accettazione
+- Tutti i tipi di utente possono scegliere tra l'accesso con Google o in locale
+- Dopo un accesso riuscito si viene indirizzati alla schermata principale dell'applicazione
+- Se avviene un login errato (es. caratteri non ammessi o account non registrato) devono apparire messaggi di errore adeguati.
+#### TASKS - User Story 1
+1. Integrare entrambe le opzioni di accesso (locale, Google)
+2. Configurare il flusso decisionale dell'accesso
+3. Gestire le azioni da fare dopo che l'accesso va a buon fine
+4. Testare che entrambe le modalità di accesso vadano a buon fine
+5. Implementare i messaggi di errore per ogni metodo
