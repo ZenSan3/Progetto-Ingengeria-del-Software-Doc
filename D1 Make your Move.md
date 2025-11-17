@@ -349,3 +349,14 @@ Come utente voglio ricevere alternative in modo da non perdere tempo se la richi
 2. Visualizzare il percorso sulla mappa
 3. Gestire le azioni da fare dopo che un'alternativa è stata selezionata
 4. Testare che l'erogazione e la selezione delle alternative vada a buon fine
+### User Story 10 - Associata allo Use Case RF10: Inserimento preferenze
+#### Impostazione preferenze
+Come utente voglio salvare i mezzi preferiti in modo da ottenere soluzioni più adatte a me
+#### Criteri di accettazione
+- Solo gli utenti base possono impostare le preferenze
+- Tutti i veicoli devono poter essere selezionati come preferenziali in contemporanea
+- Se non sono stati selezionati veicoli tra le preferenze, allora verrà generato un messaggio informativo opportuno, invitando a prenderne in considerazione almeno uno per usufruire dell'app a pieno
+#### TASKS - User Story 10
+1. Includere nella UI una scheda contenente la lista dei veicoli disponibili
+2. Dare la possibilità di salvare i veicoli come preferenziali
+3. Testare che la selezione dei veicoli funzioni

@@ -7,7 +7,7 @@
 - [x]  US7: richiesta tratta (RF7)
 - [x]  US8: ricevuta di consegna (RF8)
 - [x] US9: proposta di alternativa (RF9)
-- [ ] US10: preferenze (RF10)
+- [x] US10: preferenze (RF10)
 - [ ]  US11: modifiche (RF11)
 - [ ]  US12: gestione utenti (RF12)
 - [ ]  US13: disabilità (RF7)
