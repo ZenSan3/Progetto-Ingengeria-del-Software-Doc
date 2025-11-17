@@ -81,7 +81,7 @@ Per il cittadino:
 
 ### Requisiti funzionali Utente
 - [x] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
-- [x] RF8: Ricevuta di consegna: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
+- [x] RF8: Ricevuta di approvazione: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
 - [x] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
 - [x] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
 ### Requisiti funzionali Admin
@@ -130,7 +130,7 @@ Questo use case descrive come l’utente anonimo effettua il login nella webapp
 RF3: Ricerca
 RF4: Visualizzazione mappa
 RF7: Richiesta tratta
-RF8: Ricevuta di consegna
+RF8: Ricevuta di approvazione
 RF9: Proposta di alternativa
 RF10: Inserimento preferenze
 ![[UCD RF10, RF3, RF4, RF7, RF8, RF9.drawio.svg]]
@@ -165,7 +165,7 @@ Questo use case descrive come l'utente può richiedere la tratta per il bus dina
 2. Se l'utente desidera cancellare la tratta, può selezionare la richiesta fatta e cliccare sul pulsante "CANCELLA TRATTA"
 3. Se l'utente deve prenotare per meno di 10 persone in un unico blocco (es: mamma con i suoi 2 figli), allora dovrà inserire nel form il numero di persone
 4. Se l'utente deve prenotare per 10 o più persone (es: insegnante delle elementari con 11 studenti), allora dovrà inserire anche il numero di partecipanti e aspettare che un operatore processi la richiesta
-#### Use case RF8: Ricevuta di consegna
+#### Use case RF8: Ricevuta di approvazione
 ##### Riassunto:
 Questo use case descrive come l'utente capisce che la sua richiesta ha effettivamente "attivato" la linea dinamica
 ##### Descrizione:
@@ -323,3 +323,16 @@ Come utente voglio poter aprire una richiesta per agevolare un mio spostamento n
 3. Testare la corretta creazione delle richieste
 4. Testare che le Richieste arrivino agli operatori
 5. Dare messaggi di errore se le tratte non vengono create nel modo corretto
+### User Story 8 - Associata allo Use Case RF8: Ricevuta di Approvazione
+#### Gestione Ricevuta di consegna
+Come utente voglio sapere se la mia richiesta è stata approvata e sapere l'itinerario del bus, e se non è stato approvato ricevere un'alternativa
+#### Criteri di accettazione
+1. Inviare in automatico una mail ai richiedenti quando la tratta del giorno dopo viene finalizzata
+2. La mail deve essere costruita secondo l'esito della richiesta (Positivo o Negativo)
+3. La web app deve anche inviare una notifica agli utenti indicando luogo e orario del passaggio se la richiesta risulta positiva
+4. Se la richiesta è negativa la mail deve inserire un bottone per la possibilità di richiedere un metodo alternativo di spostamento (Secondo le preferenze)
+#### TASKS - User Story 8
+1. Creare una routine che crei le mail e le invii
+2. Inviare anche una notifica per rinforzare la mail
+3. Testare che le mail vengano create e inviate nel modo corretto
+4. Testare che le notifiche vengano effettivamente ricevute
