@@ -312,11 +312,11 @@ Come operatore e admin voglio visualizzare le statistiche dell'app come fermate 
 #### Gestione richiesta della Tratta
 Come utente voglio poter aprire una richiesta per agevolare un mio spostamento nel futuro in modo da poter avere un'ottimizzazione sul il mio spostamento.
 #### Criteri di accettazione
-1. Tutti gli utenti devono poter richiedere una tratta
-2. Nel form devo poter inserire la partenza/arrivo, l'ora di partenza e i veicoli preferiti
-3. Il form deve essere intuitivo per gli utenti
-4. La richiesta deve essere inviata agli operatori per l'accettazione
-5. Il sistema deve dare errore se la tratta creata o non va a buon fine o il form è compilato in modo errato
+- Tutti gli utenti devono poter richiedere una tratta
+- Nel form devo poter inserire la partenza/arrivo, l'ora di partenza e i veicoli preferiti
+- Il form deve essere intuitivo per gli utenti
+- La richiesta deve essere inviata agli operatori per l'accettazione
+- Il sistema deve dare errore se la tratta creata o non va a buon fine o il form è compilato in modo errato
 #### TASKS - User Story 7
 1. Creare il form della richiesta
 2. Inserire la ricerca per le stazioni/zone
@@ -327,12 +327,25 @@ Come utente voglio poter aprire una richiesta per agevolare un mio spostamento n
 #### Gestione Ricevuta di consegna
 Come utente voglio sapere se la mia richiesta è stata approvata e sapere l'itinerario del bus, e se non è stato approvato ricevere un'alternativa
 #### Criteri di accettazione
-1. Inviare in automatico una mail ai richiedenti quando la tratta del giorno dopo viene finalizzata
-2. La mail deve essere costruita secondo l'esito della richiesta (Positivo o Negativo)
-3. La web app deve anche inviare una notifica agli utenti indicando luogo e orario del passaggio se la richiesta risulta positiva
-4. Se la richiesta è negativa la mail deve inserire un bottone per la possibilità di richiedere un metodo alternativo di spostamento (Secondo le preferenze)
+- Solo gli utenti base possono ricevere l'esito della domanda
+- Inviare in automatico una mail ai richiedenti quando la tratta del giorno dopo viene finalizzata
+- La mail deve essere costruita secondo l'esito della richiesta (Positivo o Negativo)
+- La web app deve anche inviare una notifica agli utenti indicando luogo e orario del passaggio se la richiesta risulta positiva
+- Se la richiesta è negativa la mail deve inserire un bottone per la possibilità di richiedere un metodo alternativo di spostamento (Secondo le preferenze)
 #### TASKS - User Story 8
 1. Creare una routine che crei le mail e le invii
 2. Inviare anche una notifica per rinforzare la mail
 3. Testare che le mail vengano create e inviate nel modo corretto
 4. Testare che le notifiche vengano effettivamente ricevute
+### User Story 9 - Associata allo Use Case RF9: Proposta di alternativa
+#### Proposta di alternativa
+Come utente voglio ricevere alternative in modo da non perdere tempo se la richiesta non sarà in mio favore
+#### Criteri di accettazione
+- Solo gli utenti base possono avere la proposta di alternativa
+- La proposta dovrà includere tutti i veicoli disponibili nell'app, dando priorità a quelli selezionati come preferiti dall'utente
+- Se i veicoli preferiti non sono idonei per il percorso da fare, allora verrà generato un messaggio informativo opportuno, mostrandone altri anche se non sono stati selezionati dall'utente
+#### TASKS - User Story 9
+1. Includere i veicoli in alternativa alla linea dinamica
+2. Visualizzare il percorso sulla mappa
+3. Gestire le azioni da fare dopo che un'alternativa è stata selezionata
+4. Testare che l'erogazione e la selezione delle alternative vada a buon fine
