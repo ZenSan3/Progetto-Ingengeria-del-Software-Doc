@@ -360,3 +360,14 @@ Come utente voglio salvare i mezzi preferiti in modo da ottenere soluzioni più 
 1. Includere nella UI una scheda contenente la lista dei veicoli disponibili
 2. Dare la possibilità di salvare i veicoli come preferenziali
 3. Testare che la selezione dei veicoli funzioni
+### User Story 11 - Associata allo Use Case RF11: Modifiche
+#### Modifiche parametri di sistema
+Come admin voglio modificare fermate, tratte e preferenze di sistema per gestire in modo ottimale il flusso
+#### Criteri di accettazione
+- Solo gli admin possono mettere mano ai parametri di sistema
+- Tutte le modifiche, una volta applicate, devono essere visualizzabili dagli utenti e dagli operatori
+- Tutte le modifiche, se applicate per errore, devono poter essere revocabili dall'admin
+#### TASKS - User Story 11
+1. Includere nella UI una scheda apposita per la gestione dei parametri di sistema
+2. Gestire le azioni da fare dopo che un admin decide di modificare un parametro
+3. Testare che le modifiche vengano effettuate e che siano visualizzabili da utenti e operatori
