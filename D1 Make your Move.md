@@ -295,3 +295,4 @@ Come operatore e admin voglio visualizzare e gestire le richieste in modo da pot
 1. Integrare la visualizzazione delle richieste nella UI
 2. Dare la possibilità di modifica, accettazione e revoca della richiesta
 3. Testare le funzionalità di modifica, accettazione e revoca
+4. Implementare messaggi di errore per ogni metodo
