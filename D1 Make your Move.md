@@ -371,3 +371,14 @@ Come admin voglio modificare fermate, tratte e preferenze di sistema per gestire
 1. Includere nella UI una scheda apposita per la gestione dei parametri di sistema
 2. Gestire le azioni da fare dopo che un admin decide di modificare un parametro
 3. Testare che le modifiche vengano effettuate e che siano visualizzabili da utenti e operatori
+### User Story 12 - Associata allo Use Case RF12: Gestione Utenti
+#### Gestione permessi e ruoli
+Come admin voglio poter gestire ruoli e autorizzazioni in modo da mantenere il sistema sicuro e operativo
+#### Criteri di accettazione
+- Solo gli admin possono mettere mano ai permessi
+- Tutti gli utenti devono essere visualizzabili e modificabili dagli admin
+- Gli admin possono modificare i permessi ad utenti, operatori e altri admin, ma non a se stesso. In tal caso comparirà un messaggio di errore adeguato al contesto
+#### TASKS - User Story 12
+1. Includere nella UI una scheda apposita per la gestione degli utenti
+2. Inserire gli utenti in un database
+3. Testare che le modifiche vengano effettuate
