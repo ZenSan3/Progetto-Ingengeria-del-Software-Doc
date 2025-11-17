@@ -382,3 +382,14 @@ Come admin voglio poter gestire ruoli e autorizzazioni in modo da mantenere il s
 1. Includere nella UI una scheda apposita per la gestione degli utenti
 2. Inserire gli utenti in un database
 3. Testare che le modifiche vengano effettuate
+### User Story 13 - Associata allo Use Case RF7: Richiesta di Tratta
+#### Richiesta di tratta per utenti affetti da disabilità
+Come utente con disabilità motorie o sensoriali voglio poter richiedere una tratta in modo usufruire dei servizi dell'app senza barriere o difficoltà aggiuntive
+***N.B: Questa User Story è da considerarsi come estensione della User Story 7. Pertanto i Criteri di accettazione e le tasks descritti sotto sono un'aggiunta a quelli già presenti***
+#### Criteri di accettazione
+- L'interfaccia utente deve essere conforme agli standard WCAG 2.1 livello A
+- Il sistema deve dare errore se la tratta creata o non va a buon fine o il form è compilato in modo errato. Anche gli errori devono essere opportunamente segnalati seguendo lo standard WCAG 2.1 livello A
+#### TASKS - User Story 13
+6. Assicurarsi che i font siano ridimensionabili senza compromettere o perdere il layout
+7. Fare in modo di coinvolgere più sensi per i messaggi di errore (es: vista e suono)
+8. Testare l'interazione con strumenti di accessibilità come lo zoom
