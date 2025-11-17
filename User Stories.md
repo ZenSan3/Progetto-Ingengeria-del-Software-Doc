@@ -10,7 +10,7 @@
 - [x] US10: preferenze (RF10)
 - [x]  US11: modifiche (RF11)
 - [x]  US12: gestione utenti (RF12)
-- [ ]  US13: disabilità (RF7)
+- [x]  US13: disabilità (RF7)
 - [ ]  US14: ricerca con filtri (RF3)
 - [ ]  US15: tratta predefinita/salvata (RF7)
 - [ ]  US16: richiesta tratta (da 2 a 9 persone) (RF7)
