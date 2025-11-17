@@ -296,3 +296,16 @@ Come operatore e admin voglio visualizzare e gestire le richieste in modo da pot
 2. Dare la possibilità di modifica, accettazione e revoca della richiesta
 3. Testare le funzionalità di modifica, accettazione e revoca
 4. Implementare messaggi di errore per ogni metodo
+### User Story 6 - Associata allo Use Case RF6: Statistiche
+#### Visualizzazione delle statistiche
+Come operatore e admin voglio visualizzare le statistiche dell'app come fermate o tratte più comuni e i veicoli preferiti degli utenti.
+#### Criteri di accettazione
+- Solo operatori e admin possono visualizzare le statistiche
+- Le statistiche devono essere facilmente interpretabili da chiunque debba visualizzarle
+- I dati delle statistiche devono essere aggregati e visualizzati in modo opportuno
+#### TASKS - User Story 6
+1. Integrare la visualizzazione delle statistiche nella UI tramite dashboard
+2. Inserire un filtraggio/ricerca dei dati nella dashboard
+3. Costruire la dashboard in modo che i grafici e dati non si sovrappongano
+4. Testare che le statistiche vengano visualizzate correttamente
+
