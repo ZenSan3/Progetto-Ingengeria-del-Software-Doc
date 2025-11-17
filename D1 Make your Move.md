@@ -308,4 +308,18 @@ Come operatore e admin voglio visualizzare le statistiche dell'app come fermate 
 2. Inserire un filtraggio/ricerca dei dati nella dashboard
 3. Costruire la dashboard in modo che i grafici e dati non si sovrappongano
 4. Testare che le statistiche vengano visualizzate correttamente
-
+### User Story 7 - Associata allo Use Case RF7: Richiesta di Tratta
+#### Gestione richiesta della Tratta
+Come utente voglio poter aprire una richiesta per agevolare un mio spostamento nel futuro in modo da poter avere un'ottimizzazione sul il mio spostamento.
+#### Criteri di accettazione
+1. Tutti gli utenti devono poter richiedere una tratta
+2. Nel form devo poter inserire la partenza/arrivo, l'ora di partenza e i veicoli preferiti
+3. Il form deve essere intuitivo per gli utenti
+4. La richiesta deve essere inviata agli operatori per l'accettazione
+5. Il sistema deve dare errore se la tratta creata o non va a buon fine o il form è compilato in modo errato
+#### TASKS - User Story 7
+1. Creare il form della richiesta
+2. Inserire la ricerca per le stazioni/zone
+3. Testare la corretta creazione delle richieste
+4. Testare che le Richieste arrivino agli operatori
+5. Dare messaggi di errore se le tratte non vengono create nel modo corretto
