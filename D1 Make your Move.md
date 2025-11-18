@@ -7,7 +7,7 @@
  
 **Document Info**
 
-| Doc. Nam        | D1-DescrizioneProgetto                                                                                  |
+| Doc. Name       | D1-DescrizioneProgetto                                                                                  |
 | :-------------- | :------------------------------------------------------------------------------------------------------ |
 | **Description** | Documento di analisi dei requisiti funzionali, non funzionali, user story, front-end design e user flow |
 | **Doc. Number** | D1 V0.6                                                                                                 |
