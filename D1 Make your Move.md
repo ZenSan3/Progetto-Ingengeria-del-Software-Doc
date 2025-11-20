@@ -19,6 +19,7 @@
 3. Requisiti Non Funzionali
 4. Use case Diagram
 5. User Stories
+6. Front-end design
 
 ## 1\. Il progetto Make your Move
 ### Problema
@@ -393,3 +394,4 @@ Come utente con disabilità motorie o sensoriali voglio poter richiedere una tra
 6. Assicurarsi che i font siano ridimensionabili senza compromettere o perdere il layout
 7. Fare in modo di coinvolgere più sensi per i messaggi di errore (es: vista e suono)
 8. Testare l'interazione con strumenti di accessibilità come lo zoom
+## 6\. Front-end design
