@@ -78,8 +78,8 @@ Per il cittadino:
 - [x] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
 
 ### Requisiti funzionali Operatore
-- [ ] RF5: Richieste utenti: Il sistema deve garantire agli operatori di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7) e di poterle accettare o rifiutarle
-- [ ] RF6: Statistiche: Il sistema deve poter permettere agli operatori di visualizzare le statistiche riguardanti le richieste e le persone effettivamente salite
+- [x] RF5: Richieste utenti: Il sistema deve garantire agli operatori di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7) e di poterle accettare o rifiutarle
+- [x] RF6: Statistiche: Il sistema deve poter permettere agli operatori di visualizzare le statistiche riguardanti le richieste e le persone effettivamente salite
 
 ### Requisiti funzionali Utente
 - [x] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
@@ -447,3 +447,14 @@ Grazie al pulsante sulla sinistra, l'utente può effettuare una richiesta per la
 L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
 #### RNF8: Facilità d'uso
 La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
+### Figura 4: schermata principale Make Your Move (Operatore)
+![[MappaOperatore.png]]
+Figura 4 mostra la schermata che si presenta se l'utente che usa l'app è di tipo "operatore". Da come si può osservare, l'interfaccia è molto simile a quella dell'utente base, con la differenza di 2 pulsanti sulla sinistra. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
+#### RF5: Richieste utenti
+Il pulsante "Controlla richieste" permette all'operatore di processare le richieste di tratta effettuate dagli utenti
+#### RF6: Statistiche
+Il pulsante "Statistiche" permette all'operatore di visualizzare le statistiche riguardanti gli utilizzatori dell'app (zona di arrivo, destinazione, orari di partenza,...)
+#### RNF1: Compatibilità
+L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
+#### RNF8: Facilità d'uso
+La disposizione dei campi sono intuitivi e facili da individuare, come richiesto in RNF8, permettendo all'operatore di aver bisogno di un tempo molto breve per la formazione
