@@ -74,15 +74,15 @@ Per il cittadino:
 ### Requisiti funzionali comuni ad Admin, Operatore e Utente Base
 - [x] RF1: Registrazione: Il sistema deve permettere agli utenti di registrarsi utilizzando mail e un nickname, garantendo così lo pseudo-anonimato (RNF5) e far in modo di tenere traccia di tratte e veicoli preferiti (RF7 e RF10)
 - [x] RF2: Login: Il sistema deve permettere agli utenti di poter accedere col proprio account creato precedentemente (RF1) così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
-- [ ] RF3: Ricerca: L'utente deve poter effettuare ricerche dei luoghi per indicare il punto di partenza e arrivo
-- [ ] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
+- [x] RF3: Ricerca: L'utente deve poter effettuare ricerche dei luoghi per indicare il punto di partenza e arrivo
+- [x] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
 
 ### Requisiti funzionali Operatore
 - [ ] RF5: Richieste utenti: Il sistema deve garantire agli operatori di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7) e di poterle accettare o rifiutarle
 - [ ] RF6: Statistiche: Il sistema deve poter permettere agli operatori di visualizzare le statistiche riguardanti le richieste e le persone effettivamente salite
 
 ### Requisiti funzionali Utente
-- [ ] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
+- [x] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
 - [ ] RF8: Ricevuta di approvazione: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
 - [ ] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
 - [ ] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
@@ -434,3 +434,16 @@ L'interfaccia, essendo basata su un'applicazione web, è progettata per essere u
 Sebbene non specificato direttamente nell'immagine, il design potrebbe facilmente supportare la funzionalità di cambio lingua (es. aggiungendo un selettore di lingua nell'angolo), permettendo all'utente di scegliere tra Italiano, Inglese o Tedesco, come descritto in RNF7
 #### RNF8: Facilità d'uso
 La disposizione dei campi sono intuitivi e facili da individuare. L'accesso rapido tramite Google è chiaramente visibile. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
+### Figura 3: schermata principale Make Your Move (Utente base)
+![[Mappa.png]]
+Figura 3 mostra il mockup dell'interfaccia dell'applicazione per l'utente base. Sulla sinistra è presente una casella di ricerca e un pulsante "Richiedi Tratta" per inserire la propria richiesta. Al centro si può visualizzare e interagire con una mappa. Sulla destra si possono vedere dei pulsanti per vedere varie "viste" (piste ciclabili, percorsi autobus,....) e per accedere alle impostazioni. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
+#### RF3: Ricerca
+L'interfaccia permette all'utente di poter effettuare ricerche di stazioni, zone e fermate
+#### RF4: Visualizzazione mappa
+L'interfaccia permette all'utente di poter visualizzare ed interagire con la mappa centrale, sia con i pulsanti sul lato destro, sia interagendo con il cursore e con la casella di ricerca
+#### RF7: Richiesta tratta
+Grazie al pulsante sulla sinistra, l'utente può effettuare una richiesta per la tratta dinamica
+#### RNF1: Compatibilità
+L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
+#### RNF8: Facilità d'uso
+La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
