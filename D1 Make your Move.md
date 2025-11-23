@@ -488,3 +488,13 @@ Il sistema, specialmente nei casi in cui la tratta non passa nella zona dell'ute
 L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
 #### RNF8: Facilità d'uso
 La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
+### Figura 7: impostazioni
+![[Settings.png]]
+Figura 7 mostra il mockup delle impostazioni, raggiungibili da un pulsante presente nelle figure 3, 4 e 5. Il pulsante "Impostazioni Account" permette di modificare aspetti come lo username e informazioni relative ad utenti con particolari bisogni, "Preferenze veicoli" manda all'interfaccia di figura 8 e "Reimposta passsword" permette di cambiare la password.
+Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
+#### RNF1: Compatibilità
+L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
+#### RNF7: Lingua
+Sebbene non specificato direttamente nell'immagine, il design potrebbe facilmente supportare la funzionalità di cambio lingua (es. aggiungendo un selettore di lingua nell'angolo), permettendo all'utente di scegliere tra Italiano, Inglese o Tedesco, come descritto in RNF7
+#### RNF8: Facilità d'uso
+La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
