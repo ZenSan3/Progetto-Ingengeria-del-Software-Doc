@@ -87,8 +87,8 @@ Per il cittadino:
 - [ ] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
 - [ ] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
 ### Requisiti funzionali Admin
-- [ ] RF11: Modifiche: Il sistema deve permettere agli admin di poter fare modifiche all'app (esempio: disabilitare una fermata)
-- [ ] RF12: Gestione utenti: Il sistema deve permettere agli admin di gestire e dare permessi agli utenti
+- [x] RF11: Modifiche: Il sistema deve permettere agli admin di poter fare modifiche all'app (esempio: disabilitare una fermata)
+- [x] RF12: Gestione utenti: Il sistema deve permettere agli admin di gestire e dare permessi agli utenti
 
 ## 3. Requisiti Non Funzionali
 - [x] RNF1: Compatibilità: Il sistema deve essere pienamente compatibile con i seguenti browser: Chrome/Chromium 105 o superiore e Safari 16.4 o superiore. Il software deve garantire un'esperienza utente coerente e funzionale su tutte le piattaforme supportate, assicurando la corretta visualizzazione delle interfacce e il pieno funzionamento di tutte le funzionalità, indipendentemente dal browser utilizzato.
@@ -458,3 +458,14 @@ Il pulsante "Statistiche" permette all'operatore di visualizzare le statistiche 
 L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
 #### RNF8: Facilità d'uso
 La disposizione dei campi sono intuitivi e facili da individuare, come richiesto in RNF8, permettendo all'operatore di aver bisogno di un tempo molto breve per la formazione
+### Figura 5: schermata principale Make Your Move (Admin)
+![[MappaAdmin.png]]
+Figura 5 mostra la schermata che si presenta se l'utente che usa l'app è di tipo "admin". Da come si può osservare, l'interfaccia è molto simile a quella dell'operatore, con l'aggiunta di 2 pulsanti sulla sinistra. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
+#### RF11: Modifiche
+Il pulsante "Modifica fermate" permette all'admin di interagire ed applicare modifiche visibili a tutti. Per esempio l'admin può segnare una fermata come "temporaneamente sospesa" a causa di lavori
+#### RF12: Gestione utenti
+il pulsante "Gestisci utenti" permette agli admin di gestire i ruoli degli utenti che sono presenti sull'app e di cancellarli in caso di comportamenti poco consoni
+#### RNF1: Compatibilità
+L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
+#### RNF8: Facilità d'uso
+La disposizione dei campi sono intuitivi e facili da individuare, come richiesto in RNF8, permettendo all'admin di aver bisogno di un tempo molto breve per la formazione
