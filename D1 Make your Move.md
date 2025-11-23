@@ -83,8 +83,8 @@ Per il cittadino:
 
 ### Requisiti funzionali Utente
 - [x] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
-- [ ] RF8: Ricevuta di approvazione: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
-- [ ] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
+- [x] RF8: Ricevuta di approvazione: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
+- [x] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
 - [ ] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
 ### Requisiti funzionali Admin
 - [x] RF11: Modifiche: Il sistema deve permettere agli admin di poter fare modifiche all'app (esempio: disabilitare una fermata)
@@ -436,7 +436,7 @@ Sebbene non specificato direttamente nell'immagine, il design potrebbe facilment
 La disposizione dei campi sono intuitivi e facili da individuare. L'accesso rapido tramite Google è chiaramente visibile. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
 ### Figura 3: schermata principale Make Your Move (Utente base)
 ![[Mappa.png]]
-Figura 3 mostra il mockup dell'interfaccia dell'applicazione per l'utente base. Sulla sinistra è presente una casella di ricerca e un pulsante "Richiedi Tratta" per inserire la propria richiesta. Al centro si può visualizzare e interagire con una mappa. Sulla destra si possono vedere dei pulsanti per vedere varie "viste" (piste ciclabili, percorsi autobus,....) e per accedere alle impostazioni. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
+Figura 3 mostra il mockup dell'interfaccia dell'applicazione per l'utente base. Sulla sinistra è presente una casella di ricerca e un pulsante "Richiedi Tratta" per inserire la propria richiesta (vedi figura 6). Al centro si può visualizzare e interagire con una mappa. Sulla destra si possono vedere dei pulsanti per vedere varie "viste" (piste ciclabili, percorsi autobus,....) e per accedere alle impostazioni. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
 #### RF3: Ricerca
 L'interfaccia permette all'utente di poter effettuare ricerche di stazioni, zone e fermate
 #### RF4: Visualizzazione mappa
@@ -467,5 +467,24 @@ Il pulsante "Modifica fermate" permette all'admin di interagire ed applicare mod
 il pulsante "Gestisci utenti" permette agli admin di gestire i ruoli degli utenti che sono presenti sull'app e di cancellarli in caso di comportamenti poco consoni
 #### RNF1: Compatibilità
 L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
+#### RNF6: Accessibilità
+L'interfaccia permette, se preventivamente segnalato al momento della registrazione, di far valutare la richiesta più attentamente ad un operatore o admin
 #### RNF8: Facilità d'uso
-La disposizione dei campi sono intuitivi e facili da individuare, come richiesto in RNF8, permettendo all'admin di aver bisogno di un tempo molto breve per la formazione
+La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
+### Figura 6: richiesta tratta
+![[Richiesta.png]]
+Figura 6 mostra il mockup della schermata di richiesta tratta, raggiungibile dopo aver premuto il relativo pulsante in figura 3. L'interfaccia è espandibile includendo elementi di funzionalità discusse negli Use Case e nelle User Stories come:
+- Calendario per richiedere una tratta per giorni successivi a quello odierno
+- Pulsante per salvare la tratta e dare un'opzione per la frequenza (es: tutti i giorni, solo dal lunedì al venerdì)
+- Box per scrivere il numero di richiedenti
+Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
+#### RF7: Richiesta tratta
+L'utente può inserire la zona di partenza (con relativo orario) e quella di arrivo nell'interfaccia. Come anticipato prima, questa è espandibile con elementi/funzionalità già descritte in precedenza, che però non sono descritte dalla figura
+#### RF8: Ricevuta di approvazione
+Una volta cliccato il pulsante di conferma, l'utente dovrà attendere che un operatore o un admin processi la richiesta e generi la tratta. Nel caso passasse nella zona dell'utente, riceverà una mail o notifica a riguardo
+#### RF9: Proposta di alternativa
+Il sistema, specialmente nei casi in cui la tratta non passa nella zona dell'utente o se non l'ha richiesta, suggerirà tramite mail o notifica di visionare le alternative proposte dall'app
+#### RNF1: Compatibilità
+L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
+#### RNF8: Facilità d'uso
+La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
