@@ -85,7 +85,7 @@ Per il cittadino:
 - [x] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
 - [x] RF8: Ricevuta di approvazione: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
 - [x] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
-- [ ] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
+- [x] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
 ### Requisiti funzionali Admin
 - [x] RF11: Modifiche: Il sistema deve permettere agli admin di poter fare modifiche all'app (esempio: disabilitare una fermata)
 - [x] RF12: Gestione utenti: Il sistema deve permettere agli admin di gestire e dare permessi agli utenti
@@ -490,11 +490,19 @@ L'interfaccia, essendo basata su un'applicazione web, è progettata per essere u
 La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
 ### Figura 7: impostazioni
 ![[Settings.png]]
-Figura 7 mostra il mockup delle impostazioni, raggiungibili da un pulsante presente nelle figure 3, 4 e 5. Il pulsante "Impostazioni Account" permette di modificare aspetti come lo username e informazioni relative ad utenti con particolari bisogni, "Preferenze veicoli" manda all'interfaccia di figura 8 e "Reimposta passsword" permette di cambiare la password.
-Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
+Figura 7 mostra il mockup delle impostazioni, raggiungibili da un pulsante presente nelle figure 3, 4 e 5. Il pulsante "Impostazioni Account" permette di modificare aspetti come lo username e informazioni relative ad utenti con particolari bisogni, "Preferenze veicoli" manda all'interfaccia di figura 8 e "Reimposta password" permette di cambiare la password. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
 #### RNF1: Compatibilità
 L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
 #### RNF7: Lingua
 Sebbene non specificato direttamente nell'immagine, il design potrebbe facilmente supportare la funzionalità di cambio lingua (es. aggiungendo un selettore di lingua nell'angolo), permettendo all'utente di scegliere tra Italiano, Inglese o Tedesco, come descritto in RNF7
+#### RNF8: Facilità d'uso
+La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
+### Figura 8: preferenze veicoli
+![[Preferenze.png]]
+L'interfaccia di figura 8, raggiungibile tramite un pulsante in figura 7, permette di selezionare i veicoli che vogliamo utilizzare e visualizzare dall'app. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
+#### RF10: Inserimento preferenze
+L'interfaccia permette all'utente di selezionare contemporaneamente più veicoli, in modo che possa ricevere alternative coerenti alle sue scelte
+#### RNF1: Compatibilità
+L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
 #### RNF8: Facilità d'uso
 La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
