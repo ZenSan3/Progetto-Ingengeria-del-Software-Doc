@@ -10,7 +10,7 @@
 | Doc. Name       | D1-DescrizioneProgetto                                                                                          |
 | :-------------- | :-------------------------------------------------------------------------------------------------------------- |
 | **Description** | Documento di analisi dei requisiti funzionali, non funzionali, user story, epiche, front-end design e user flow |
-| **Doc. Number** | D1 V0.7                                                                                                         |
+| **Doc. Number** | D1 V0.8                                                                                                         |
 
 ## Indice
 
