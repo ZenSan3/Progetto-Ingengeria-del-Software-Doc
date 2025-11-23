@@ -73,7 +73,7 @@ Per il cittadino:
 ## 2. Requisiti Funzionali
 ### Requisiti funzionali comuni ad Admin, Operatore e Utente Base
 - [x] RF1: Registrazione: Il sistema deve permettere agli utenti di registrarsi utilizzando mail e un nickname, garantendo così lo pseudo-anonimato (RNF5) e far in modo di tenere traccia di tratte e veicoli preferiti (RF7 e RF10)
-- [ ] RF2: Login: Il sistema deve permettere agli utenti di poter accedere col proprio account creato precedentemente (RF1) così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
+- [x] RF2: Login: Il sistema deve permettere agli utenti di poter accedere col proprio account creato precedentemente (RF1) così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
 - [ ] RF3: Ricerca: L'utente deve poter effettuare ricerche dei luoghi per indicare il punto di partenza e arrivo
 - [ ] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
 
@@ -98,7 +98,7 @@ Per il cittadino:
 - [x] RNF5: Sicurezza e privacy: Il sistema deve aderire ai principi di **Privacy by Design** e **minimizzazione dei dati**, raccogliendo solo le informazioni strettamente necessarie per l'erogazione del servizio (es. Username, email). Tutte le password e i dati sensibili non devono mai essere memorizzati in chiaro. Deve essere imposto l'uso di algoritmi di hashing moderni e sicuri. Tutte le comunicazioni tra client e server devono avvenire esclusivamente tramite protocolli sicuri (HTTPS con TLS 1.2 o superiore).
 - [x] RNF6: Accessibilità: Il sistema sarà progettato per garantire un livello di accessibilità di base, aderendo ai requisiti minimi di conformità **WCAG 2.1 (Web Content Accessibility Guidelines) al Livello A**. Questo impegno assicura la rimozione delle barriere all'accessibilità più significative, ponendo le fondamenta per un'interazione fruibile da parte degli utenti con disabilità.
 - [x] RNF7: Lingua: Il sistema deve offrire agli utenti la possibilità di cambiare la lingua dell'interfaccia tra una delle seguenti opzioni: Italiano, Inglese e Tedesco. L'utente deve poter selezionare e modificare la lingua preferita in modo intuitivo, e la scelta deve essere mantenuta per le sessioni future.
-- [ ] RNF8: Facilità d'uso: Il sistema deve garantire un'elevata usabilità ed essere progettato per un'interazione intuitiva, specialmente per utenti con limitata competenza digitale. Il design dell'interfaccia deve essere pulito, coerente e guidare l'utente nel completamento delle operazioni principali.
+- [x] RNF8: Facilità d'uso: Il sistema deve garantire un'elevata usabilità ed essere progettato per un'interazione intuitiva, specialmente per utenti con limitata competenza digitale. Il design dell'interfaccia deve essere pulito, coerente e guidare l'utente nel completamento delle operazioni principali.
 
 ## 4. Use Case
 ### Utente anonimo:
@@ -408,7 +408,7 @@ Questa epica è centrale per Make Your Move, in quanto verte sulla funzionalità
 ## 7\. Front-end design
 ### Figura 1: schermata di registrazione
 ![[Registrazione.png]]
-Figura 1 mostra il mockup della schermata di login dell'applicazione "Make Your Move", che rappresenta come l'interfaccia si presenterà all'utente finale. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
+Figura 1 mostra il mockup della schermata di registrazione dell'applicazione "Make Your Move" (raggiungibile tramite un pulsante "REGISTRATI" aggiungibile in Figura 2), che rappresenta come l'interfaccia si presenterà all'utente finale. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
 #### RF1: Registrazione
 La registrazione può avvenire in 2 modi:
 - Tramite credenziali locali: l'interfaccia permette all'utente di inserire username, email e password, selezionare il tipo di utente (tra i disponibili abbiamo utente base, operatore e admin) e se possiede eventuali disabilità che richiedono una particolare attenzione nell'usufruire dei servizi forniti
@@ -419,6 +419,17 @@ L'interfaccia, essendo basata su un'applicazione web, è progettata per essere u
 Il sistema raccoglie solo le informazioni personali che si possono vedere da figura 1, garantendo così ciò che è stato descritto in RNF5
 #### RNF6: Accessibilità
 Da come si può notare in figura 1, l'interfaccia permette di selezionare una spunta per utenti possessori di disabilità o invalidità che necessitano di particolari sostegni o supporti
+#### RNF8: Facilità d'uso
+La disposizione dei campi sono intuitivi e facili da individuare. L'accesso rapido tramite Google è chiaramente visibile. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
+### Figura 2: schermata di login
+![[Login.png]]
+Figura 2 mostra il mockup dell'interfaccia della schermata di login dell'applicazione. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
+#### RF2: Login
+L'accesso può avvenire in 2 modi:
+- Tramite credenziali locali: l'interfaccia permette all'utente di inserire username e password, in modo da poter entrare nell'applicazione
+- Tramite account Google: cliccando il pulsante con l'icona di Google, l'interfaccia permette di utilizzare le proprie credenziali Google per poter accedere
+#### RNF1: Compatibilità
+L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
 #### RNF7: Lingua
 Sebbene non specificato direttamente nell'immagine, il design potrebbe facilmente supportare la funzionalità di cambio lingua (es. aggiungendo un selettore di lingua nell'angolo), permettendo all'utente di scegliere tra Italiano, Inglese o Tedesco, come descritto in RNF7
 #### RNF8: Facilità d'uso
