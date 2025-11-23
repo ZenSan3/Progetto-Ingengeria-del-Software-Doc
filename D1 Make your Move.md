@@ -7,10 +7,10 @@
  
 **Document Info**
 
-| Doc. Name       | D1-DescrizioneProgetto                                                                                  |
-| :-------------- | :------------------------------------------------------------------------------------------------------ |
-| **Description** | Documento di analisi dei requisiti funzionali, non funzionali, user story, front-end design e user flow |
-| **Doc. Number** | D1 V0.6                                                                                                 |
+| Doc. Name       | D1-DescrizioneProgetto                                                                                          |
+| :-------------- | :-------------------------------------------------------------------------------------------------------------- |
+| **Description** | Documento di analisi dei requisiti funzionali, non funzionali, user story, epiche, front-end design e user flow |
+| **Doc. Number** | D1 V0.7                                                                                                         |
 
 ## Indice
 
@@ -19,7 +19,8 @@
 3. Requisiti Non Funzionali
 4. Use case Diagram
 5. User Stories
-6. Front-end design
+6. Epiche
+7. Front-end design
 
 ## 1\. Il progetto Make your Move
 ### Problema
@@ -394,7 +395,17 @@ Come utente con disabilità motorie o sensoriali voglio poter richiedere una tra
 6. Assicurarsi che i font siano ridimensionabili senza compromettere o perdere il layout
 7. Fare in modo di coinvolgere più sensi per i messaggi di errore (es: vista e suono)
 8. Testare l'interazione con strumenti di accessibilità come lo zoom
-## 6\. Front-end design
+## 6\. Epiche
+### Epica 1 - Richiesta della tratta dinamica
+#### User Stories associate:
+- User Story 7: Richiesta di tratta
+- User Story 8: Gestione Ricevuta di consegna
+- User Story 13: Richiesta di tratta per utenti affetti da disabilità
+#### Descrizione:
+L'Epica 1 comprende tutte le funzionalità che permettono agli utenti di richiedere la tratta in base a scenari ed esigenze differenti
+#### Motivazione:
+Questa epica è centrale per Make Your Move, in quanto verte sulla funzionalità principale dell'app
+## 7\. Front-end design
 ### Figura 1: schermata di registrazione
 ![[Registrazione.png]]
 Figura 1 mostra il mockup della schermata di login dell'applicazione "Make Your Move", che rappresenta come l'interfaccia si presenterà all'utente finale. Di seguito una descrizione riguardante i requisiti funzionali e non funzionali precedentemente definiti:
