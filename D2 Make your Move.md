@@ -12,5 +12,12 @@
 | **Doc. Number** | D2 V0.0                            |
 
 ## Indice
-
-1. 
+1. Web API's
+2. Implementation
+3. Repository Organization
+4. Branching strategy e organizzazione del lavoro
+5. Dependencies
+6. Database
+7. testing
+8. FrontEnd
+9. Deployment

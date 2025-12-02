@@ -13,4 +13,10 @@
 
 ## Indice
 
-1. 
+1. Analisi dei componenti
+	1. Definizione dei componenti
+	2. Diagramma dei componenti
+2. Diagramma delle Classi
+	1. Diagramma delle classi complessivo
+3. Dal class diagram alle API
+4. Business Plan
