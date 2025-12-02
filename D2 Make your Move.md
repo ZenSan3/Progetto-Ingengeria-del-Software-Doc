@@ -21,3 +21,12 @@
 7. testing
 8. FrontEnd
 9. Deployment
+
+## 1. Web API's
+
+
+
+## 2. Implementation
+
+### 2.1 Repository Organization
+Il codice del progetto (https://github.com/ZenSan3/MakeYourMove) è disponibile su github ed è organizzato nel seguente modo:
