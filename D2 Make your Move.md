@@ -30,3 +30,8 @@
 
 ### 2.1 Repository Organization
 Il codice del progetto (https://github.com/ZenSan3/MakeYourMove) è disponibile su github ed è organizzato nel seguente modo:
+
+
+Inoltre abbiamo una Repository per la documentazione dei deliverable (https://github.com/ZenSan3/Progetto-Ingengeria-del-Software-Doc), questa è stata fatta perché abbiamo usato Obsidian (Markdown) per scrivere la documentazione. Quindi abbiamo creato questa repo ed è strutturata come segue:
+
+### 2.2 Branching strategy e organizzazione del lavoro
