@@ -10,7 +10,7 @@
 | Doc. Name       | D1-DescrizioneProgetto                                                                                          |
 | :-------------- | :-------------------------------------------------------------------------------------------------------------- |
 | **Description** | Documento di analisi dei requisiti funzionali, non funzionali, user story, epiche, front-end design e user flow |
-| **Doc. Number** | D1 V0.8                                                                                                         |
+| **Doc. Number** | D1 V1.0                                                                                                         |
 
 ## Indice
 
@@ -73,33 +73,33 @@ Per il cittadino:
 
 ## 2. Requisiti Funzionali
 ### Requisiti funzionali comuni ad Admin, Operatore e Utente Base
-- [x] RF1: Registrazione: Il sistema deve permettere agli utenti di registrarsi utilizzando mail e un nickname, garantendo così lo pseudo-anonimato (RNF5) e far in modo di tenere traccia di tratte e veicoli preferiti (RF7 e RF10)
-- [x] RF2: Login: Il sistema deve permettere agli utenti di poter accedere col proprio account creato precedentemente (RF1) così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
-- [x] RF3: Ricerca: L'utente deve poter effettuare ricerche dei luoghi per indicare il punto di partenza e arrivo
-- [x] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
+- [ ] RF1: Registrazione: Il sistema deve permettere agli utenti di registrarsi utilizzando mail e un nickname, garantendo così lo pseudo-anonimato (RNF5) e far in modo di tenere traccia di tratte e veicoli preferiti (RF7 e RF10)
+- [ ] RF2: Login: Il sistema deve permettere agli utenti di poter accedere col proprio account creato precedentemente (RF1) così da poter accedere ai propri dati salvati e per poter far riconoscere le richieste dei servizi al server
+- [ ] RF3: Ricerca: L'utente deve poter effettuare ricerche dei luoghi per indicare il punto di partenza e arrivo
+- [ ] RF4: Visualizzazione mappa: L'utente deve essere in grado di visualizzare e interagire con la mappa interattiva
 
 ### Requisiti funzionali Operatore
-- [x] RF5: Richieste utenti: Il sistema deve garantire agli operatori di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7) e di poterle accettare o rifiutarle
-- [x] RF6: Statistiche: Il sistema deve poter permettere agli operatori di visualizzare le statistiche riguardanti le richieste e le persone effettivamente salite
+- [ ] RF5: Richieste utenti: Il sistema deve garantire agli operatori di visualizzare in blocco le richieste di tratte effettuate dagli utenti (RF7) e di poterle accettare o rifiutarle
+- [ ] RF6: Statistiche: Il sistema deve poter permettere agli operatori di visualizzare le statistiche riguardanti le richieste e le persone effettivamente salite
 
 ### Requisiti funzionali Utente
-- [x] RF7: Richiesta linea dinamica: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
-- [x] RF8: Ricevuta di approvazione: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
-- [x] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
-- [x] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
+- [ ] RF7: Richiesta linea dinamica: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
+- [ ] RF8: Ricevuta di approvazione: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
+- [ ] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
+- [ ] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
 ### Requisiti funzionali Admin
-- [x] RF11: Modifiche: Il sistema deve permettere agli admin di poter fare modifiche all'app (esempio: disabilitare una fermata)
-- [x] RF12: Gestione utenti: Il sistema deve permettere agli admin di gestire e dare permessi agli utenti
+- [ ] RF11: Modifiche: Il sistema deve permettere agli admin di poter fare modifiche all'app (esempio: disabilitare una fermata)
+- [ ] RF12: Gestione utenti: Il sistema deve permettere agli admin di gestire e dare permessi agli utenti
 
 ## 3. Requisiti Non Funzionali
-- [x] RNF1: Compatibilità: Il sistema deve essere pienamente compatibile con i seguenti browser: Chrome/Chromium 105 o superiore e Safari 16.4 o superiore. Il software deve garantire un'esperienza utente coerente e funzionale su tutte le piattaforme supportate, assicurando la corretta visualizzazione delle interfacce e il pieno funzionamento di tutte le funzionalità, indipendentemente dal browser utilizzato.
+- [ ] RNF1: Compatibilità: Il sistema deve essere pienamente compatibile con i seguenti browser: Chrome/Chromium 105 o superiore. Il software deve garantire un'esperienza utente coerente e funzionale su tutte le piattaforme supportate, assicurando la corretta visualizzazione delle interfacce e il pieno funzionamento di tutte le funzionalità, indipendentemente dal browser utilizzato.
 - [ ] RNF2: Performance: Il sistema deve garantire tempi di risposta rapidi e prestazioni efficienti, in modo tale che ogni operazione, come il login, la registrazione o la prenotazione di una tratta, venga completata entro un massimo di 2 secondi per il 95% delle richieste. Questo requisito deve essere mantenuto anche durante i picchi di utilizzo, con un carico simultaneo di almeno 100 utenti connessi al sistema. Il sistema deve inoltre scalare facilmente per supportare un numero crescente di utenti senza compromettere le prestazioni.
 - [ ] RNF3: Scalabilità: Il sistema deve essere progettato per garantire la scalabilità, consentendo la gestione efficiente di qualsiasi tipo di operazione fino a un massimo di 10.000 utenti simultanei. Il software dovrà mantenere prestazioni ottimali (RNF2) anche con un elevato numero di accessi contemporanei, senza compromettere la velocità di risposta o la stabilità del sistema. Il design architetturale dovrà supportare l'espansione futura, permettendo l'incremento delle risorse in base alle esigenze di crescita dell'utenza.
 - [ ] RNF4: Affidabilità: Il sistema deve garantire un'affidabilità, con una disponibilità minima del **95%**, il che corrisponde a un downtime massimo di **18 giorni e 6 ore** all'anno. Il software deve essere progettato per minimizzare i tempi di inattività pianificati e non pianificati, garantendo un accesso continuo ai servizi, anche durante periodi di picco di utilizzo.
-- [x] RNF5: Sicurezza e privacy: Il sistema deve aderire ai principi di **Privacy by Design** e **minimizzazione dei dati**, raccogliendo solo le informazioni strettamente necessarie per l'erogazione del servizio (es. Username, email). Tutte le password e i dati sensibili non devono mai essere memorizzati in chiaro. Deve essere imposto l'uso di algoritmi di hashing moderni e sicuri. Tutte le comunicazioni tra client e server devono avvenire esclusivamente tramite protocolli sicuri (HTTPS con TLS 1.2 o superiore).
-- [x] RNF6: Accessibilità: Il sistema sarà progettato per garantire un livello di accessibilità di base, aderendo ai requisiti minimi di conformità **WCAG 2.1 (Web Content Accessibility Guidelines) al Livello A**. Questo impegno assicura la rimozione delle barriere all'accessibilità più significative, ponendo le fondamenta per un'interazione fruibile da parte degli utenti con disabilità.
-- [x] RNF7: Lingua: Il sistema deve offrire agli utenti la possibilità di cambiare la lingua dell'interfaccia tra una delle seguenti opzioni: Italiano, Inglese e Tedesco. L'utente deve poter selezionare e modificare la lingua preferita in modo intuitivo, e la scelta deve essere mantenuta per le sessioni future.
-- [x] RNF8: Facilità d'uso: Il sistema deve garantire un'elevata usabilità ed essere progettato per un'interazione intuitiva, specialmente per utenti con limitata competenza digitale. Il design dell'interfaccia deve essere pulito, coerente e guidare l'utente nel completamento delle operazioni principali.
+- [ ] RNF5: Sicurezza e privacy: Il sistema deve aderire ai principi di **Privacy by Design** e **minimizzazione dei dati**, raccogliendo solo le informazioni strettamente necessarie per l'erogazione del servizio (es. Username, email). Tutte le password e i dati sensibili non devono mai essere memorizzati in chiaro. Deve essere imposto l'uso di algoritmi di hashing moderni e sicuri. Tutte le comunicazioni tra client e server devono avvenire esclusivamente tramite protocolli sicuri (HTTPS con TLS 1.2 o superiore).
+- [ ] RNF6: Accessibilità: Il sistema sarà progettato per garantire un livello di accessibilità di base, aderendo ai requisiti minimi di conformità **WCAG 2.1 (Web Content Accessibility Guidelines) al Livello A**. Questo impegno assicura la rimozione delle barriere all'accessibilità più significative, ponendo le fondamenta per un'interazione fruibile da parte degli utenti con disabilità.
+- [ ] RNF7: Lingua: Il sistema deve offrire agli utenti la possibilità di cambiare la lingua dell'interfaccia tra una delle seguenti opzioni: Italiano, Inglese e Tedesco. L'utente deve poter selezionare e modificare la lingua preferita in modo intuitivo, e la scelta deve essere mantenuta per le sessioni future.
+- [ ] RNF8: Facilità d'uso: Il sistema deve garantire un'elevata usabilità ed essere progettato per un'interazione intuitiva, specialmente per utenti con limitata competenza digitale. Il design dell'interfaccia deve essere pulito, coerente e guidare l'utente nel completamento delle operazioni principali.
 
 ## 4. Use Case
 ### Utente anonimo:
@@ -508,3 +508,6 @@ L'interfaccia, essendo basata su un'applicazione web, è progettata per essere u
 #### RNF8: Facilità d'uso
 La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
 ## 8\. User Flow
+Lo User Flow seguente serve per descrivere come l'utente base andrà ad effettuare la richiesta della linea dinamica. Questo diagramma va a presupporre che l'utente in questione sia già registrato, e che quindi che disponga già delle proprie credenziali per poter accedere all'applicazione, Di seguito si trova il diagramma con la sua legenda.
+
+![[User Flow Make Your Move.drawio.svg]]
