@@ -21,6 +21,7 @@
 5. User Stories
 6. Epiche
 7. Front-end design
+8. User Flow
 
 ## 1\. Il progetto Make your Move
 ### Problema
@@ -82,7 +83,7 @@ Per il cittadino:
 - [x] RF6: Statistiche: Il sistema deve poter permettere agli operatori di visualizzare le statistiche riguardanti le richieste e le persone effettivamente salite
 
 ### Requisiti funzionali Utente
-- [x] RF7: Richiesta tratta: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
+- [x] RF7: Richiesta linea dinamica: Il sistema deve permettere all'utente di richiedere il punto di partenza e di arrivo, con i relativi orari
 - [x] RF8: Ricevuta di approvazione: Il sistema, una volta che genera la tratta della linea dinamica, deve fornire una risposta all'utente, dichiarando dove e quando si troverà il bus
 - [x] RF9: Proposta di alternativa: Il sistema, se la tratta è satura o la generazione di questa risulta troppo lontana dall'utente, deve fornire un'alternativa valida in base a disponibilità e preferenze (RF10)
 - [x] RF10: Inserimento preferenze: Il sistema deve consentire all'utente di inserire i veicoli preferenziali
@@ -131,7 +132,7 @@ Questo use case descrive come l’utente anonimo effettua il login nella webapp
 ### Utente Base:
 RF3: Ricerca
 RF4: Visualizzazione mappa
-RF7: Richiesta tratta
+RF7: Richiesta linea dinamica
 RF8: Ricevuta di approvazione
 RF9: Proposta di alternativa
 RF10: Inserimento preferenze
@@ -152,7 +153,7 @@ Questo use case descrive come l'utente può interagire con la mappa
 2. L'utente, per interagire con la mappa dovrà usare il cursore per spostarsi \[estensione 1]
 ##### Estensioni:
 1. Se l'utente vuole avere dei dettagli sul luogo visualizzato sulla mappa, può cliccare su di esso per rivelare informazioni come nome, tipologia (ristorante, parco, università,...) e zona in cui è situato
-#### Use case RF7: Richiesta tratta
+#### Use case RF7: Richiesta linea dinamica
 ##### Riassunto:
 Questo use case descrive come l'utente può richiedere la tratta per il bus dinamico
 ##### Descrizione:
@@ -310,7 +311,7 @@ Come operatore e admin voglio visualizzare le statistiche dell'app come fermate 
 2. Inserire un filtraggio/ricerca dei dati nella dashboard
 3. Costruire la dashboard in modo che i grafici e dati non si sovrappongano
 4. Testare che le statistiche vengano visualizzate correttamente
-### User Story 7 - Associata allo Use Case RF7: Richiesta di Tratta
+### User Story 7 - Associata allo Use Case RF7: Richiesta linea dinamica
 #### Gestione richiesta della Tratta
 Come utente voglio poter aprire una richiesta per agevolare un mio spostamento nel futuro in modo da poter avere un'ottimizzazione sul il mio spostamento.
 #### Criteri di accettazione
@@ -384,7 +385,7 @@ Come admin voglio poter gestire ruoli e autorizzazioni in modo da mantenere il s
 1. Includere nella UI una scheda apposita per la gestione degli utenti
 2. Inserire gli utenti in un database
 3. Testare che le modifiche vengano effettuate
-### User Story 13 - Associata allo Use Case RF7: Richiesta di Tratta
+### User Story 13 - Associata allo Use Case RF7: Richiesta linea dinamica
 #### Richiesta di tratta per utenti affetti da disabilità
 Come utente con disabilità motorie o sensoriali voglio poter richiedere una tratta in modo usufruire dei servizi dell'app senza barriere o difficoltà aggiuntive
 ***N.B: Questa User Story è da considerarsi come estensione della User Story 7. Pertanto i Criteri di accettazione e le tasks descritti sotto sono un'aggiunta a quelli già presenti***
@@ -398,7 +399,7 @@ Come utente con disabilità motorie o sensoriali voglio poter richiedere una tra
 ## 6\. Epiche
 ### Epica 1 - Richiesta della tratta dinamica
 #### User Stories associate:
-- User Story 7: Richiesta di tratta
+- User Story 7: Richiesta linea dinamica
 - User Story 8: Gestione Ricevuta di consegna
 - User Story 13: Richiesta di tratta per utenti affetti da disabilità
 #### Descrizione:
@@ -441,7 +442,7 @@ Figura 3 mostra il mockup dell'interfaccia dell'applicazione per l'utente base. 
 L'interfaccia permette all'utente di poter effettuare ricerche di stazioni, zone e fermate
 #### RF4: Visualizzazione mappa
 L'interfaccia permette all'utente di poter visualizzare ed interagire con la mappa centrale, sia con i pulsanti sul lato destro, sia interagendo con il cursore e con la casella di ricerca
-#### RF7: Richiesta tratta
+#### RF7: Richiesta linea dinamica
 Grazie al pulsante sulla sinistra, l'utente può effettuare una richiesta per la tratta dinamica
 #### RNF1: Compatibilità
 L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
@@ -506,3 +507,4 @@ L'interfaccia permette all'utente di selezionare contemporaneamente più veicoli
 L'interfaccia, essendo basata su un'applicazione web, è progettata per essere utilizzata su diversi browser (come specificato nel requisito), e il design pulito e semplice supporta la compatibilità con browser come Chrome, Opera ed Edge
 #### RNF8: Facilità d'uso
 La disposizione dei campi sono intuitivi e facili da individuare. Questi elementi favoriscono l'utilizzo senza bisogno di istruzioni complesse, come richiesto in RNF8, permettendo all'utente di familiarizzare con il sistema in poco tempo
+## 8\. User Flow
