@@ -54,3 +54,14 @@ Questa interfaccia permette all'utente che ha già effettuato l'accesso di acced
 Si "attiva" in caso di avvenuta modifica della password da parte dell’utente. Dialoga inoltre con la componente “Gestione invio mail” notificandola di questo cambiamento
 ##### IF - Dati modificati
 Raggruppa le varie modifiche apportate dall’utente attraverso le impostazioni e sostituisce i dati presenti con i dati modificati da quest’ultimo
+#### CMP3: Gestione invio mail
+##### Descrizione:
+Il componente si occupa di richiedere l’invio di una e-mail all’indirizzo di posta elettronica dell’utente per informarlo sul percorso della linea dinamica, l’avvenuta modifica della password o la creazione di un nuovo account (password temporanea inclusa). Il contenuto della mail viene elaborato dal componente e viene successivamente reso a disposizione del sistema esterno che invierà la mail.
+##### IR - Password temporanea
+Password che viene generata automaticamente dal sistema nel momento in cui l’utente effettua la registrazione al sistema.
+##### IR - Mail utente
+Il componente necessita della mail dell’utente per poter inviare le varie notifiche.
+##### IR - Avvenuto cambio password
+Si "attiva" in caso di avvenuta modifica della password da parte dell’utente. Dialoga inoltre con la componente “Gestione impostazioni”, da cui prende questa informazione
+##### IF - Contenuto mail
+Rappresenta il contenuto delle mail (oggetto, testo e indirizzo email di destinazione) che verranno inviate tramite questo componente
