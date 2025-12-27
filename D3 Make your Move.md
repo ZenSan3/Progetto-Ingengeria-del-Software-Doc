@@ -142,6 +142,15 @@ Funzione che garantisce al sistema di salvare qualunque modifica apportata ai da
 Raccolta delle informazioni relative alle tratte effettuate e richieste dagli utenti (es: orario della partenza, luogo di partenza e arrivo)
 ##### IF - Lista richieste
 Funzione che fornisce la lista delle richieste da far processare ad admin e operatori
+#### CMP9: Gestione trend
+##### Descrizione:
+Questo componente si occupa di gestire e far visualizzare ad operatori e admin i dati relativi alle linee dinamiche
+##### IR - Dati tratte
+Raccolta delle informazioni relative alle tratte effettuate dalla linea dinamica
+##### IR - Analisi dati tratte
+Il componente richiede dei parametri per poter gestire e far visualizzare i dati come l'operatore/admin desidera
+##### IF - Dati tratte richieste
+Raccolta delle informazioni relative alle richieste degli utenti
 ### Diagramma dei Componenti
 ![[DiagrammaComponenti.drawio.svg]]
 
