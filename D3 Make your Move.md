@@ -43,3 +43,14 @@ La data e l’ora dell’autenticazione dell’utente vengono salvate all’inte
 Questa interfaccia permette all'utente che ha già effettuato l'accesso di accedere all'applicazione, in modo da poter usufruire dei servizi e delle funzioni della stessa
 ##### IF - Richiesta registrazione
 L’utente richiede di effettuare la registrazione al portale fornendo i propri dati (username, tipo di utente, disabilità, email) i quali vengono salvati nel database.
+#### CMP2: Gestione impostazioni
+##### Descrizione:
+Il componente si occupa di raggruppare le varie impostazioni dell’applicazione come il cambio della lingua usata nell’applicazione, della password, delle preferenze dei veicoli,... Permette inoltre all’utente di modificare i propri dati personali. Se l’utente effettua per la prima volta il login, viene obbligato ad effettuare un cambio password
+##### IR - Modifica dei dati
+Richiede i nuovi dati da sostituire a quelli precedentemente registrati nel sistema
+##### IR - Autenticazione
+Questa interfaccia permette all'utente che ha già effettuato l'accesso di accedere all'applicazione, in modo da poter usufruire dei servizi e delle funzioni della stessa. In questo caso, l'autenticazione è necessaria per poter gestire il proprio profilo utente
+##### IF - Avvenuto cambio password
+Si "attiva" in caso di avvenuta modifica della password da parte dell’utente. Dialoga inoltre con la componente “Gestione invio mail” notificandola di questo cambiamento
+##### IF - Dati modificati
+Raggruppa le varie modifiche apportate dall’utente attraverso le impostazioni e sostituisce i dati presenti con i dati modificati da quest’ultimo
