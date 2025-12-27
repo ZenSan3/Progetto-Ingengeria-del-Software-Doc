@@ -6,10 +6,10 @@
  
 **Document Info**
 
-| Doc. Name       | D3-AnalisiProgettazione |
-| :-------------- | :---------------------- |
-| **Description** | Documento di            |
-| **Doc. Number** | D3 V0.0                 |
+| Doc. Name       | D3-AnalisiProgettazione          |
+| :-------------- | :------------------------------- |
+| **Description** | Documento di design del progetto |
+| **Doc. Number** | D3 V0.0                          |
 
 ## Indice
 
