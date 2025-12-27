@@ -30,7 +30,7 @@ Legenda:
 ##### Descrizione:
 Si occupa della funzionalità di registrazione di un account e accesso tramite delle credenziali. Include una pagina per il login e il logout e permette di identificare coloro che effettuano l’accesso al sistema, permettendogli di accedere alle funzionalità a loro riservate. L’utente può selezionare una modalità di accesso alternativa, ovvero l'utilizzo delle proprie credenziali già in possesso su Google.
 ##### IR - Credenziali di accesso
-Le credenziali includono e-mail e password. Sono richieste all’utente per l’accesso al sistema. Al primo login dopo la registrazione verrà richiesta la mail dell’utente e una password temporanea fornita dal sistema successivamente alla registrazione
+Le credenziali includono e-mail e password. Sono richieste all’utente per l’accesso al sistema
 ##### IR - Autorizzazione autenticazione da Google
 Il componente, per chi sceglie questa modalità di accesso, deve richiedere l'accesso al sistema al Google Auth Service che, previo controllo, conferma che queste siano corrette
 ##### IR - Dati utente
@@ -57,11 +57,20 @@ Raggruppa le varie modifiche apportate dall’utente attraverso le impostazioni 
 #### CMP3: Gestione invio mail
 ##### Descrizione:
 Il componente si occupa di richiedere l’invio di una e-mail all’indirizzo di posta elettronica dell’utente per informarlo sul percorso della linea dinamica, l’avvenuta modifica della password o la creazione di un nuovo account (password temporanea inclusa). Il contenuto della mail viene elaborato dal componente e viene successivamente reso a disposizione del sistema esterno che invierà la mail.
-##### IR - Password temporanea
-Password che viene generata automaticamente dal sistema nel momento in cui l’utente effettua la registrazione al sistema.
 ##### IR - Mail utente
 Il componente necessita della mail dell’utente per poter inviare le varie notifiche.
 ##### IR - Avvenuto cambio password
 Si "attiva" in caso di avvenuta modifica della password da parte dell’utente. Dialoga inoltre con la componente “Gestione impostazioni”, da cui prende questa informazione
 ##### IF - Contenuto mail
 Rappresenta il contenuto delle mail (oggetto, testo e indirizzo email di destinazione) che verranno inviate tramite questo componente
+#### CMP4: Gestione nuova registrazione
+##### Descrizione:
+Questo componente si occupa di richiedere all’utente i propri dati per effettuare una nuova registrazione. L’utente fornirà i propri dati personali, la propria mail e la password, che verranno salvati all’interno del database.
+##### IR - Dati personali utente
+I dati dell'utente comprendono mail di registrazione, username, tipo di utente e se è portatore di disabilità
+##### IR - Richiesta registrazione
+Richiede all’utente o al personale, a seconda di chi sta utilizzando il sistema, le proprie credenziali d’accesso e ne verifica la correttezza dialogando con il database.
+##### IF - Mail utente
+Il componente necessita della mail dell’utente per poter inviare alla stessa le varie notifiche
+##### IF - Account utente
+Il componente deve avere accesso ai dati presenti nell’account dell’utente così da poterli salvare e fornire i dati qualora fosse necessario
