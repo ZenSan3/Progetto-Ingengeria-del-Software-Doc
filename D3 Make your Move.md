@@ -91,7 +91,13 @@ Il componente richiede ad un servizio esterno gli indirizzi delle stazioni e del
 Il componente richiede ad un servizio esterno la mappa (o posizione geografica) delle stazioni e delle fermate
 ##### IF - Invio richiesta mappa stazioni
 Il componente fornisce le informazioni inserite dall'utente riguardo una particolare stazione o fermata
-
+#### CMP6: Sistema ricerca stazioni
+##### Descrizione:
+Questo componente si occupa di far visualizzare la mappa della città all'utente. Inoltre questo potrà interagirci in modo da poter navigare più agevolmente sul territorio
+##### IR - Autenticazione
+Questa interfaccia permette all'utente che ha già effettuato l'accesso di accedere all'applicazione, in modo da poter usufruire dei servizi e delle funzioni della stessa. In questo caso, l'autenticazione è necessaria per poter effettuare ricerche
+##### IR - Parametri di ricerca
+Il componente richiede dei parametri all'utente per poter effettuare una ricerca sulle stazioni o sulle fermate
 ### Diagramma dei Componenti
 ![[DiagrammaComponenti.drawio.svg]]
 
