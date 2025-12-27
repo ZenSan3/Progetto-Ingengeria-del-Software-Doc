@@ -74,3 +74,7 @@ Richiede all’utente o al personale, a seconda di chi sta utilizzando il sistem
 Il componente necessita della mail dell’utente per poter inviare alla stessa le varie notifiche
 ##### IF - Account utente
 Il componente deve avere accesso ai dati presenti nell’account dell’utente così da poterli salvare e fornire i dati qualora fosse necessario
+
+### Diagramma dei Componenti
+![[DiagrammaComponenti.drawio.svg]]
+
