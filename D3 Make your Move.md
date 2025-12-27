@@ -119,6 +119,29 @@ Il componente fornisce la richiesta compilata dall'utente da "conservare" nel da
 Una volta processate le richieste, viene creata la linea dinamica. Questo componente dialoga con "Gestione invio mail" in modo da notificare tutti gli utenti
 ##### IF - Conferma richiesta
 Se la richiesta va a buon fine (ovvero è stata compilata ed è stato cliccato su conferma), all'utente arriverà una mail che conferma ciò
+#### CMP8: Gestione Database
+##### Descrizione:
+Il componente funge da raccolta dati. Salva nel database le attività del personale e dell’utente e tutti i dati relativi ad essi con le relative modifiche, quando presenti. Si interfaccia inoltre con la componente gestione trend inviando i dati relativi alle tratte degli utenti
+##### IR - Dati database
+Raccolta di tutti i dati presenti all’interno del database sia riguardanti gli operatori/admin sia l’utente
+##### IR - Dati modificati
+Raggruppa le varie modifiche apportate dall’utente attraverso le impostazioni e sostituisce i dati presenti con i dati modificati
+##### IR - Account utente
+Il componente deve avere accesso ai dati presenti nell'account dell'utente così da poterli salvare e fornire quando necessario.
+##### IR - Data autenticazione
+La data e l'ora dell’autenticazione dell’utente vengono salvate all'interno del database. In questo modo verranno salvati i dati del log
+##### IR - Invio richiesta
+Il componente richiede la richiesta compilata dall'utente, in modo da poterla "conservare" nel database
+##### IF - Dati utente
+I dati dell'utente comprendono mail di registrazione, username, tipo di utente e se è portatore di disabilità
+##### IF - Attività personale e utenza
+Raccolta delle varie attività compiute dal personale e dall’utente all’interno del sistema
+##### IF - Modifiche database
+Funzione che garantisce al sistema di salvare qualunque modifica apportata ai dati personali
+##### IF - Dati tratte
+Raccolta delle informazioni relative alle tratte effettuate e richieste dagli utenti (es: orario della partenza, luogo di partenza e arrivo)
+##### IF - Lista richieste
+Funzione che fornisce la lista delle richieste da far processare ad admin e operatori
 ### Diagramma dei Componenti
 ![[DiagrammaComponenti.drawio.svg]]
 
