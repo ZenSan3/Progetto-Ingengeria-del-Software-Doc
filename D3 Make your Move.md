@@ -98,6 +98,27 @@ Questo componente si occupa di far visualizzare la mappa della città all'utente
 Questa interfaccia permette all'utente che ha già effettuato l'accesso di accedere all'applicazione, in modo da poter usufruire dei servizi e delle funzioni della stessa. In questo caso, l'autenticazione è necessaria per poter effettuare ricerche
 ##### IR - Parametri di ricerca
 Il componente richiede dei parametri all'utente per poter effettuare una ricerca sulle stazioni o sulle fermate
+#### CMP7: Gestione richiesta tratta
+##### Descrizione:
+Questo componente si occupa di gestire le richieste per la linea dinamica effettuate dagli utenti
+##### IR - Autenticazione
+Questa interfaccia permette all'utente che ha già effettuato l'accesso di accedere all'applicazione, in modo da poter usufruire dei servizi e delle funzioni della stessa. In questo caso, l'autenticazione è necessaria per poter effettuare richieste per la linea dinamica
+##### IR - Lista richieste
+Il componente richiede dal database la lista delle richieste effettuate in giornata, in modo che un operatore o admin possa processarle
+##### IR - Codice utente
+Il componente richiede il codice utente (ovvero lo username) in modo da poter identificare univocamente le richieste
+##### IR - Orario partenza
+Il componente richiede l'orario di partenza desiderato dell'utente, che rientra tra le informazioni obbligatorie per la compilazione della richiesta
+##### IR - Nome partenza
+Il componente richiede il nome della stazione o fermata di partenza desiderata dell'utente, che rientra tra le informazioni obbligatorie per la compilazione della richiesta
+##### IR - Nome arrivo
+Il componente richiede il nome della stazione o fermata di arrivo desiderata dell'utente, che rientra tra le informazioni obbligatorie per la compilazione della richiesta
+##### IF - Invio richiesta
+Il componente fornisce la richiesta compilata dall'utente da "conservare" nel database
+##### IF - Tratta effettiva
+Una volta processate le richieste, viene creata la linea dinamica. Questo componente dialoga con "Gestione invio mail" in modo da notificare tutti gli utenti
+##### IF - Conferma richiesta
+Se la richiesta va a buon fine (ovvero è stata compilata ed è stato cliccato su conferma), all'utente arriverà una mail che conferma ciò
 ### Diagramma dei Componenti
 ![[DiagrammaComponenti.drawio.svg]]
 
