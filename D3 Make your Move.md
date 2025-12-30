@@ -10,7 +10,7 @@
 | Doc. Name       | D3-AnalisiProgettazione          |
 | :-------------- | :------------------------------- |
 | **Description** | Documento di design del progetto |
-| **Doc. Number** | D3 V0.1                          |
+| **Doc. Number** | D3 V0.2                          |
 
 ## Indice
 
@@ -154,3 +154,5 @@ Raccolta delle informazioni relative alle richieste degli utenti
 ### Diagramma dei Componenti
 ![[DiagrammaComponenti.drawio.svg]]
 
+## 4. Business Plan
+Il business plan del progetto Make Your Move è disponibile al seguente link: https://docs.google.com/spreadsheets/d/1vl38HC6hu52xKXNOjyRckl_DpkZUGGk7QQY_Uxu61nE/edit?usp=sharing
