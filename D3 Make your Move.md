@@ -10,7 +10,7 @@
 | Doc. Name       | D3-AnalisiProgettazione          |
 | :-------------- | :------------------------------- |
 | **Description** | Documento di design del progetto |
-| **Doc. Number** | D3 V0.2                          |
+| **Doc. Number** | D3 V0.3                          |
 
 ## Indice
 
@@ -155,4 +155,5 @@ Raccolta delle informazioni relative alle richieste degli utenti
 ![[DiagrammaComponenti.drawio.svg]]
 
 ## 4. Business Plan
-Il business plan del progetto Make Your Move è disponibile al seguente link: https://docs.google.com/spreadsheets/d/1vl38HC6hu52xKXNOjyRckl_DpkZUGGk7QQY_Uxu61nE/edit?usp=sharing
+Abbiamo stilato un business plan per Make Your Move. Vista la natura dell'applicazione, quindi a servizio dei cittadini, abbiamo deciso di renderla fruibile gratuitamente. Gli introiti dell'applicazione verranno generati da una partnership con gli erogatori dei servizi (inizialmente con Trentino Trasporti).
+Le specifiche potranno essere viste al seguente link (documento del prospetto economico): https://docs.google.com/spreadsheets/d/1vl38HC6hu52xKXNOjyRckl_DpkZUGGk7QQY_Uxu61nE/edit?usp=sharing
