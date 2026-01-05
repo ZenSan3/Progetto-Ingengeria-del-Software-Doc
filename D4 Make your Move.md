@@ -10,7 +10,7 @@
 | Doc. Name       | D3-ReportFinale                                                                                                                                                                             |
 | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Description** | Documento finale del progetto che include l'organizzazione del lavoro, ruoli, documentazione, video, tempo complessivo e di ciascun membro dedicato al progetto, criticità, autovalutazione |
-| **Doc. Number** | D3 V0.1                                                                                                                                                                                     |
+| **Doc. Number** | D3 V0.2                                                                                                                                                                                     |
 
 ## Indice
 1. Organizzazione del lavoro
@@ -33,4 +33,13 @@ Per la realizzazione del progetto sono stati utilizzati i seguenti strumenti:
 - Canva per la realizzazione del pitch e per il mockup del frontend
 - Git e Github per sincronizzare e versionare la webapp e la documentazione
 - Visual Studio Code per lo sviluppo (coding) del progetto
+## 2. Ruoli e attività
+Di seguito sono presenti i ruoli e le attività svolte dai membri del gruppo
+
+| Componente del team | Ruolo          | Principali attività                                                                                   |
+| ------------------- | -------------- | ----------------------------------------------------------------------------------------------------- |
+| Alisia Wegher       | Project Leader | Gestione del progetto, scrittura dei documenti e sottomissione                                        |
+| Cristian Zeni       | Developer      | Sviluppo della webapp, contribuzione alla scrittura dei documenti (mockup e diagrammi principalmente) |
+| Brando Giuffrida    | Analista       | Analisi del problema e definizione della soluzione                                                    |
+
 
