@@ -10,7 +10,7 @@
 | Doc. Name       | D3-ReportFinale                                                                                                                                                                             |
 | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Description** | Documento finale del progetto che include l'organizzazione del lavoro, ruoli, documentazione, video, tempo complessivo e di ciascun membro dedicato al progetto, criticità, autovalutazione |
-| **Doc. Number** | D3 V0.3                                                                                                                                                                                     |
+| **Doc. Number** | D3 V0.4                                                                                                                                                                                     |
 
 ## Indice
 1. Organizzazione del lavoro
@@ -53,3 +53,11 @@ a
 Il gruppo 14 ha riscontrato diverse criticità, che però non hanno compromesso la qualità del lavoro ma solo la timeline. 
 L'organizzazione poteva essere rivisitata in modo che i vari componenti del team potessero lavorare in maniera più indipendente, e non necessariamente attendendo la disponibilità di almeno un altra persona. In tal caso la timeline per la fine del progetto poteva essere meno dilatata di quello che è adesso.
 Inoltre, da come si può vedere in tabella dei "turni" di lavoro, c'è stato un periodo di inattività generale a dicembre a causa di impegni sia personali che accademici, entrambi purtroppo inderogabili. Questo, unito al fatto della poca disponibilità mostrata di un membro del gruppo nella seconda parte del progetto, ha comportato una redistribuzione in itinere del carico del lavoro e un conseguente "spostamento" della timeline del progetto
+## 5. Autovalutazione
+Nonostante le criticità riscontrate, il lavoro è stato svolto con grande impegno da parte dei membri del gruppo disponibili. Ci siamo resi conto che avremmo potuto gestire e suddividere meglio il tempo dedicato alle varie mansioni. Alisia Wegher e Cristian Zeni sono indubbiamente le 2 persone che hanno lavorato di più e, per quanto Brando Giuffrida non abbia mostrato disponibilità nella seconda parte, ha enormemente contribuito per definire le fondamenta del progetto. 
+
+|                  | Voto |
+| ---------------- | ---- |
+| Alisia Wegher    | 27   |
+| Cristian Zeni    | 27   |
+| Brando Giuffrida |      |
