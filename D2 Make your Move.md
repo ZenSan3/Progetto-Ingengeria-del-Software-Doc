@@ -10,7 +10,7 @@
 | Doc. Name       | D2-Sviluppo                        |
 | :-------------- | :--------------------------------- |
 | **Description** | Documento di sviluppo del progetto |
-| **Doc. Number** | D2 V0.2                            |
+| **Doc. Number** | D2 V0.3                            |
 
 ## Indice
 1. Web API's
@@ -359,7 +359,17 @@ La specifica delle API è disponibile sulla repository del progetto (v. link in 
 La webapp è stata sviluppata utilizzando NodeJS e Vue. Per la gestione dei dati abbiamo utilizzato MongoDB. Questo stack è stato motivato sia da conoscenze pregresse di alcuni membri del gruppo che dal materiale fornito e svolto durante il corso
 ## 2.1 Repository Organization
 Il codice del progetto (https://github.com/ZenSan3/MakeYourMove) è disponibile su github ed è organizzato nel seguente modo:
-
+- /src: cartella dei file sorgenti
+	- /api: endpoint per le risorse di utenti e fermate
+	- /middleware: middleware di autenticazione
+	- /models: modelli dati mongoose
+	- index.js: applicazione Express.js
+- /frontend: codice per la parte del frontend
+- /doc: cartella con la documentazione del codice
+	- oas3.yaml: documentazione API
+- package.json: file di configurazione del progetto npm
+- .gitignore: file di configurazione repository git
+- .env.example: esempio di file di configurazione variabili d’ambiente
 
 Inoltre abbiamo una Repository per la documentazione dei deliverable (https://github.com/ZenSan3/Progetto-Ingengeria-del-Software-Doc), questa è stata fatta perché abbiamo usato Obsidian (Markdown) per scrivere la documentazione. Quindi abbiamo creato questa repo ed è strutturata come segue:
 - /Class Diagram: cartella contenente il class diagram
