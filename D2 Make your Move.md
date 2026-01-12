@@ -10,7 +10,7 @@
 | Doc. Name       | D2-Sviluppo                        |
 | :-------------- | :--------------------------------- |
 | **Description** | Documento di sviluppo del progetto |
-| **Doc. Number** | D2 V0.1                            |
+| **Doc. Number** | D2 V0.2                            |
 
 ## Indice
 1. Web API's
@@ -355,12 +355,12 @@ La specifica delle API è disponibile sulla repository del progetto (v. link in 
           `type: string`
           `format: date-time`
           `description: 'Date specified by the user for the route request'`
-## 2. Implementation
-
-### 2.1 Repository Organization
+## 2. Implementation details
+La webapp è stata sviluppata utilizzando NodeJS e Vue. Per la gestione dei dati abbiamo utilizzato MongoDB. Questo stack è stato motivato sia da conoscenze pregresse di alcuni membri del gruppo che dal materiale fornito e svolto durante il corso
+## 2.1 Repository Organization
 Il codice del progetto (https://github.com/ZenSan3/MakeYourMove) è disponibile su github ed è organizzato nel seguente modo:
 
 
 Inoltre abbiamo una Repository per la documentazione dei deliverable (https://github.com/ZenSan3/Progetto-Ingengeria-del-Software-Doc), questa è stata fatta perché abbiamo usato Obsidian (Markdown) per scrivere la documentazione. Quindi abbiamo creato questa repo ed è strutturata come segue:
 
-### 2.2 Branching strategy e organizzazione del lavoro
+## 2.2 Branching strategy e organizzazione del lavoro
