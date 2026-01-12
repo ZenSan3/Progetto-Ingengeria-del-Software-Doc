@@ -29,7 +29,10 @@ Per la realizzazione del progetto sono stati utilizzati i seguenti strumenti:
 - Obsidian (v. 1.10.6) per stilare la documentazione
 - Draw.io per realizzare i diagrammi
 - Canva per la realizzazione del pitch e per il mockup del frontend
+- Postman per la verifica delle operazioni CRUD delle API
+- OpenAPI per la stesura delle API 
 - Git e Github per sincronizzare e versionare la webapp e la documentazione
+- Node (v. 22.21.1 LTS) per lo sviluppo del progetto
 - Visual Studio Code per lo sviluppo (coding) del progetto
 ## 2. Ruoli e attività
 Di seguito sono presenti i ruoli e le attività svolte dai membri del gruppo
