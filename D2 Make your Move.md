@@ -362,5 +362,14 @@ Il codice del progetto (https://github.com/ZenSan3/MakeYourMove) è disponibile 
 
 
 Inoltre abbiamo una Repository per la documentazione dei deliverable (https://github.com/ZenSan3/Progetto-Ingengeria-del-Software-Doc), questa è stata fatta perché abbiamo usato Obsidian (Markdown) per scrivere la documentazione. Quindi abbiamo creato questa repo ed è strutturata come segue:
-
+- /Class Diagram: cartella contenente il class diagram
+- /Diagramma componenti: cartella contenente il diagramma dei componenti
+- /Mockup-frontend: cartella con i mockup del frontend per D1 e D2
+- /Slide Pitch Comune: cartella con le slide usate per la presentazione con il comune
+- /Use Case Diagram: cartella con gli use case diagram
+- /User Flow Diagram: cartella con lo user flow
+- D1 Make Your Move: deliverable 1 del progetto (idea di progetto)
+- D2 Make Your Move: deliverable 2 del progetto (sviluppo del progetto)
+- D3 Make Your Move: deliverable 3 del progetto (design del progetto)
+- D4 Make Your Move: deliverable 4 del progetto (resoconto finale)
 ## 2.2 Branching strategy e organizzazione del lavoro
