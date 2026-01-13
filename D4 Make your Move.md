@@ -1,13 +1,13 @@
 
 ## Dipartimento di Ingegneria e Scienza dell’Informazione
 
-| **Progetto:**             | **Make your Move**          |
-| ------------------------- | --------------------------- |
-| **Titolo del documento:** | **Analisi e Progettazione** |
+| **Progetto:**             | **Make your Move**             |
+| ------------------------- | ------------------------------ |
+| **Titolo del documento:** | **Report finale del progetto** |
  
 **Document Info**
 
-| Doc. Name       | D3-ReportFinale                                                                                                                                                                             |
+| Doc. Name       | D4-ReportFinale                                                                                                                                                                             |
 | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Description** | Documento finale del progetto che include l'organizzazione del lavoro, ruoli, documentazione, video, tempo complessivo e di ciascun membro dedicato al progetto, criticità, autovalutazione |
 | **Doc. Number** | D4 V1.0                                                                                                                                                                                     |
