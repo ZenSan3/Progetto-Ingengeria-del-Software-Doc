@@ -10,7 +10,7 @@
 | Doc. Name       | D2-Sviluppo                        |
 | :-------------- | :--------------------------------- |
 | **Description** | Documento di sviluppo del progetto |
-| **Doc. Number** | D2 V0.4                            |
+| **Doc. Number** | D2 V0.5                            |
 
 ## Indice
 1. Web API's
@@ -395,3 +395,14 @@ Inoltre su GitHub abbiamo utilizzato i nostri account personali per una question
 
 Per quanto riguarda la branching strategy, abbiamo preferito mantenere solo un branch oltre al "main" ("develop") per la realizzazione delle varie funzionalità perchè ulteriori "diramazioni" non le abbiamo ritenute necessarie per pulizia e organizzazione del codice.
 Sulla repo dei deliverable invece, non è stata adottata alcuna branching strategy sempre per lo stesso motivo 
+## 2.3 Dependencies
+Il progetto npm si basa sui seguenti moduli esterni:
+- Cors: Per il supporto alle chiamate cors
+- Express: Framework web per il backend
+- Google-auth-library: Supporto al login google
+- Jsonwebtoken: Autenticazione JWT
+- Mongoose: Libreria per interfacciarsi con mongoDB
+E le seguenti dipendenze di sviluppo:
+- Dotenv: Gestione variabili d’ambiente in ambiente dev da file.env
+- Jest: Testing
+- Supertest: Testing endpoint express
