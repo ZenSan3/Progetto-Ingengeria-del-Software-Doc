@@ -10,7 +10,7 @@
 | Doc. Name       | D3-ReportFinale                                                                                                                                                                             |
 | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Description** | Documento finale del progetto che include l'organizzazione del lavoro, ruoli, documentazione, video, tempo complessivo e di ciascun membro dedicato al progetto, criticità, autovalutazione |
-| **Doc. Number** | D3 V0.4                                                                                                                                                                                     |
+| **Doc. Number** | D3 V1.0                                                                                                                                                                                     |
 
 ## Indice
 1. Organizzazione del lavoro
@@ -37,21 +37,28 @@ Per la realizzazione del progetto sono stati utilizzati i seguenti strumenti:
 ## 2. Ruoli e attività
 Di seguito sono presenti i ruoli e le attività svolte dai membri del gruppo
 
-| **Componente del team** | **Ruolo**               | **Principali attività**                                                                               |
-| ----------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------- |
-| Alisia Wegher           | Project Leader          | Gestione del progetto, scrittura dei documenti e sottomissione                                        |
-| Cristian Zeni           | Developer e Progettista | Sviluppo della webapp, contribuzione alla scrittura dei documenti (mockup e diagrammi principalmente) |
-| Brando Giuffrida        | Analista                | Analisi del problema e definizione della soluzione                                                    |
+| **Componente del team** | **Ruolo**               | **Principali attività**                                                                                      |
+| ----------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Alisia Wegher           | Project Leader          | Gestione del progetto, scrittura dei documenti e sottomissione, Business Plan, Video                         |
+| Cristian Zeni           | Developer e Progettista | Sviluppo della webapp, contribuzione alla scrittura dei documenti (mockup e diagrammi principalmente), Video |
+| Brando Giuffrida        | Analista                | Analisi del problema e definizione della soluzione                                                           |
 ## 3. Carico e distribuzione del lavoro
-a
+Vista la divisione dei ruoli descritta precedentemente, i deliverables sono stati prevalentemente scritti da Alisia Wegher
+I dettagli delle ore dedicate al progetto si possono vedere in questa tabella: https://docs.google.com/spreadsheets/d/1yvMSmpzVgy6xMqOpi-4wnSC0tU6EtL50DN_u_C5hi2I/edit?usp=sharing
 
-|                  | D1  | D2  | D3  | D4  | TOTALE |
-| ---------------- | --- | --- | --- | --- | ------ |
-| Alisia Wegher    |     |     |     |     |        |
-| Cristian Zeni    |     |     |     | 0   |        |
-| Brando Giuffrida |     |     |     | 0   |        |
-| TOTALE           |     |     |     |     |        |
-
+|                  | D1  | D2  | D3  | D4  | BP  | Video | TOTALE |
+| ---------------- | --- | --- | --- | --- | --- | ----- | ------ |
+| Alisia Wegher    | 28  | 22  | 20  | 12  | 10  |       | 92     |
+| Cristian Zeni    | 26  | 32  | 20  | 6   | 6   |       | 90     |
+| Brando Giuffrida | 16  | 0   | 0   | 0   | 0   | 0     | 16     |
+| TOTALE           | 70  | 54  | 40  | 18  | 16  |       |        |
+Altre ore che non figurano nella tabella sopra sono giustificate in questo modo:
+- Il 15/09 abbiamo fatto un incontro conoscitivo tra i membri del gruppo
+- Alla fine di ogni mese (30/09, 30/10, 30/11, 31/12, 27/01/26) abbiamo fatto una riunione per fare il punto della situazione e una previsione del lavoro da svolgere
+- Il 07/10 abbiamo presentato il Pitch per il Comune
+- Gli incontri col tutor (sia in via telematica, per messaggio e in presenza) sono stati svolti da Alisia Wegher il 25/10, 19/11 e il 19/12
+- Le ore dedicate allo sviluppo della webapp sono state incluse nella colonna D2
+Il monte ore così elevato è giustificato da revisioni varie del materiale, riscritture di alcune parti durante l'arco del semestre e lavoro non ottimizzato perchè svolto da 2 persone in contemporanea
 ## 4. Criticità
 Il gruppo 14 ha riscontrato diverse criticità, che però non hanno compromesso la qualità del lavoro ma solo la timeline. 
 L'organizzazione poteva essere rivisitata in modo che i vari componenti del team potessero lavorare in maniera più indipendente, e non necessariamente attendendo la disponibilità di almeno un altra persona. In tal caso la timeline per la fine del progetto poteva essere meno dilatata di quello che è adesso.
