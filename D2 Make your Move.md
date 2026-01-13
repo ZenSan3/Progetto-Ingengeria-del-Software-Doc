@@ -10,7 +10,7 @@
 | Doc. Name       | D2-Sviluppo                        |
 | :-------------- | :--------------------------------- |
 | **Description** | Documento di sviluppo del progetto |
-| **Doc. Number** | D2 V0.3                            |
+| **Doc. Number** | D2 V0.4                            |
 
 ## Indice
 1. Web API's
@@ -383,3 +383,15 @@ Inoltre abbiamo una Repository per la documentazione dei deliverable (https://gi
 - D3 Make Your Move: deliverable 3 del progetto (design del progetto)
 - D4 Make Your Move: deliverable 4 del progetto (resoconto finale)
 ## 2.2 Branching strategy e organizzazione del lavoro
+In quanto Cristian Zeni è il developer del gruppo, la maggior parte dello sviluppo dell'applicazione è stata affidata a lui. Ciononostante, siccome il carico di lavoro era troppo per una sola persona, Alisia Wegher ha contribuito per alleggerire il carico.
+Al momento della stesura di questa sezione del D2, sono stati eseguiti in totale 131 commit (considerando entrambe le repository), di cui 83 di Alisia Wegher, 46 di Cristian Zeni e 2 di Brando Giuffrida. Il numero così elevato di commit e lo sbilanciamento è giustificato dai seguenti fatti:
+- Il numero descrive tutti i commit effettuati per il progetto. Si sta parlando quindi di entrambe le repository
+- In questo momento la scrittura dei deliverable è quasi giunta al termine, mentre lo sviluppo dell'app è ancora attivo. Si prevede quindi un aumento del numero di commit da parte di Cristian Zeni
+Eventuali altre criticità sono state descritte nell'apposita sezione del D4.
+Inoltre su GitHub abbiamo utilizzato i nostri account personali per una questione di maggiore comodità. I nomi degli account appartengono alle seguenti persone:
+- Aliport04: Alisia Wegher
+- ZenSan3: Cristian Zeni
+- BrandoDev: Brando Giuffrida
+
+Per quanto riguarda la branching strategy, abbiamo preferito mantenere solo un branch oltre al "main" ("develop") per la realizzazione delle varie funzionalità perchè ulteriori "diramazioni" non le abbiamo ritenute necessarie per pulizia e organizzazione del codice.
+Sulla repo dei deliverable invece, non è stata adottata alcuna branching strategy sempre per lo stesso motivo 
