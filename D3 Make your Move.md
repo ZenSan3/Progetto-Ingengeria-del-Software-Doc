@@ -10,13 +10,12 @@
 | Doc. Name       | D3-AnalisiProgettazione          |
 | :-------------- | :------------------------------- |
 | **Description** | Documento di design del progetto |
-| **Doc. Number** | D3 V0.3                          |
+| **Doc. Number** | D3 V0.4                          |
 
 ## Indice
 
 1. Analisi dei componenti
 2. Diagramma delle Classi
-	1. Diagramma delle classi complessivo
 3. Dal class diagram alle API
 4. Business Plan
 ## 1. Analisi dei componenti
@@ -153,7 +152,32 @@ Il componente richiede dei parametri per poter gestire e far visualizzare i dati
 Raccolta delle informazioni relative alle richieste degli utenti
 ### Diagramma dei Componenti
 ![[DiagrammaComponenti.drawio.svg]]
-
+## 2. Diagramma delle classi
+In questa sezione vengono presentate le classi previste all'interno del progetto Make Your Move. 
+Le classi sono state individuate tramite l'analisi degli use case diagram e del diagramma dei componenti.
+### Definizione classi
+#### 1. Utente
+Abbiamo individuato l’attore “Utente”, da cui la classe omonima, che è colui che dopo aver effettuato il login all'interno della webapp può accedere a tutte le informazioni che riguardano sé e lo stato di eventuali prenotazioni fatte. Dentro questa classe sono state inserite le operazioni di gestione delle impostazioni personali.
+#### 2. Operatore
+L'operatore è lo staff che gestisce le richieste effettuate dagli utenti e può visualizzare le statistiche per rilevare le zone più frequentate
+#### 3. Admin
+L'admin è colui che gestisce gli utenti e le fermate, in aggiunta a ciò che esegue l'operatore
+#### 4. Gestione nuova registrazione e autenticazione
+L'utente può registrarsi o fare login tramite un'apposita pagine del sistema. Una volta registrato, all'utente verrà assegnato un codice identificativo e potrà accedere alle funzionalità dell'app
+#### 5. Gestione richiesta tratta
+Per la gestione delle richieste è stata identificata la classe "richiesta tratta" per gestire le informazioni e le operazioni quando un utente effettua una richiesta. L’operatore o admin registra il noleggio all’interno del sistema salvando il codice identificativo dell’utente, l'ora della partenza e i luoghi di partenza e arrivo.
+#### 6. Gestione trend
+Per la gestione del trend è stata identificata la classe trend che servirà a gestire le informazioni riguardo ai trend riguardante le fermate e le tratte più quotate dagli utenti
+#### 7. Sistema ricerca fermate
+Quando si vuole fare una ricerca delle stazioni da inserire come partenza e destinazione, la classe "Lista fermate" andrà ad attingere da "Fermate", ottenendo così un elenco di quelle pertinenti ai parametri di ricerca inseriti
+#### 8. Gestione invio mail
+Il componente “Gestione invio mail” è rappresentato dalla classe mail che invia una mail all’utente (all’indirizzo fornito durante la registrazione) per informarlo riguardo la creazione della tratta per il giorno successivo, l'avvenuto cambio password,...
+#### 9. Visualizzazione mappa
+Con questa classe (Mappa fermate) si potrà avere accesso alle informazioni delle fermate (ubicazione, disponibilità,...)
+#### 10. Attività
+Questa classe rappresenta il salvataggio delle azioni svolte da utenti, operatori e admin. Le attività salvate riguardano login, richiesta tratte e le modifiche ai dati degli utenti. Di ogni attività verrà salvato l'ID della persona, la data e l’orario in cui è stata effettuata l’attività. Tutte queste informazioni verranno poi salvate nel database.
+### Diagramma delle classi
+![[Diagramma delle classi.drawio.svg]]
 ## 4. Business Plan
 Abbiamo stilato un business plan per Make Your Move. Vista la natura dell'applicazione, quindi a servizio dei cittadini, abbiamo deciso di renderla fruibile gratuitamente. Gli introiti dell'applicazione verranno generati da una partnership con gli erogatori dei servizi (inizialmente con Trentino Trasporti).
 Le specifiche potranno essere viste al seguente link (documento del prospetto economico): https://docs.google.com/spreadsheets/d/1vl38HC6hu52xKXNOjyRckl_DpkZUGGk7QQY_Uxu61nE/edit?usp=sharing
