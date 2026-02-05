@@ -10,7 +10,7 @@
 | Doc. Name       | D3-AnalisiProgettazione          |
 | :-------------- | :------------------------------- |
 | **Description** | Documento di design del progetto |
-| **Doc. Number** | D3 V0.4                          |
+| **Doc. Number** | D3 V1.0                          |
 
 ## Indice
 
@@ -178,6 +178,23 @@ Con questa classe (Mappa fermate) si potrà avere accesso alle informazioni dell
 Questa classe rappresenta il salvataggio delle azioni svolte da utenti, operatori e admin. Le attività salvate riguardano login, richiesta tratte e le modifiche ai dati degli utenti. Di ogni attività verrà salvato l'ID della persona, la data e l’orario in cui è stata effettuata l’attività. Tutte queste informazioni verranno poi salvate nel database.
 ### Diagramma delle classi
 ![[Diagramma delle classi.drawio.svg]]
+## 3. Dal class diagram alle API
+Di seguito si vede una tabella con la mappatura tra i metodi presenti nel diagramma delle classi e le API:
+
+N.B: ciò che non si trova nella tabella sottostante implica che quei metodi non sono gestiti tramite API
+
+| Classe          | Metodo                   | HTTP OP | URL + Query params | Body Request                                    | Response       | Note                                                                     |
+| --------------- | ------------------------ | ------- | ------------------ | ----------------------------------------------- | -------------- | ------------------------------------------------------------------------ |
+| Utente          | cambiaPassword(password) | PUT     | /api/users/ID      | {password}                                      | 200<br>User    |                                                                          |
+| Utente          | cambia...()              | PUT     | /api/users/ID      | ...                                             | 200<br>User    |                                                                          |
+| Utente          | effettuaAccesso()        | PUT     | /api/auth          | {username, password}                            | 200<br>{token} | è possibile fornire username e password per ottenere un token di accesso |
+| Utente          | cercaFermate()           | GET     | /api/stations/ID   | -                                               | 200<br>Station |                                                                          |
+| Utente          | visualizzaMappa()        | GET     | /api/users/ID      | -                                               | 200<br>User    | implementata solo nel frontend usando l'indirizzo Users                  |
+| Utente          | visualizzaPrenotazioni() | GET     | /api/Routes/ID     | -                                               | 200<br>Routes  |                                                                          |
+| Admin           | gestioneUtenti()         | DELETE  | /api/Users/ID      | -                                               | 204            |                                                                          |
+| RichiestaTratta | creaTratta()             | POST    | /api/Routes/ID     | {username, stationA, stationB, dateOfDeparture} | 201<br>Routes  |                                                                          |
+| Fermata         | mostraDettagli()         | GET     | /api/stations/ID   | -                                               | 200<br>Station |                                                                          |
+
 ## 4. Business Plan
 Abbiamo stilato un business plan per Make Your Move. Vista la natura dell'applicazione, quindi a servizio dei cittadini, abbiamo deciso di renderla fruibile gratuitamente. Gli introiti dell'applicazione verranno generati da una partnership con gli erogatori dei servizi (inizialmente con Trentino Trasporti).
 Le specifiche potranno essere viste al seguente link (documento del prospetto economico): https://docs.google.com/spreadsheets/d/1vl38HC6hu52xKXNOjyRckl_DpkZUGGk7QQY_Uxu61nE/edit?usp=sharing
